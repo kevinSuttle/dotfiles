@@ -1,0 +1,19 @@
+[user]
+	name = Kevin Suttle
+	email = kevin@kevinsuttle.com
+[color]
+	status = auto
+	branch = auto
+	log = auto
+	diff = auto
+	interactive = auto
+	ui = true
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+[merge]
+	tool = vimdiff
+[github]
+	user = kevinSuttle
+[credential]
+	helper = osxkeychain

@@ -1,0 +1,2 @@
+shell -${SHELL}
+term screen-256color
