@@ -11,9 +11,11 @@
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
-[merge]
-	tool = vimdiff
 [github]
 	user = kevinSuttle
 [credential]
 	helper = osxkeychain
+[diff]
+	tool = opendiff
+[merge]
+	tool = opendiff
