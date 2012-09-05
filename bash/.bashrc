@@ -3,6 +3,8 @@ case "$TERM" in
 	xterm*) TERM=xterm-256color
 esac
 
+source ~/.rvm/scripts/rvm
+
 source "`brew --prefix`/etc/grc.bashrc"
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
