@@ -19,3 +19,4 @@
 	tool = opendiff
 [merge]
 	tool = opendiff
+	keepBackup = false
