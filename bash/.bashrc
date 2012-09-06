@@ -16,6 +16,7 @@ export LANG=en_US.UTF-8
 # Aliases
 # UNIX aliases
 alias ls='ls -laHF'
+alias cddf='cd ~/Github/dotfiles'
 
 # Git aliases
 alias gs='git status'
