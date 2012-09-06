@@ -36,3 +36,7 @@ esac
 
 # For Homebrew installed rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+if [ -f .git-completion.bash ]; then
+	source .git-completion.bash
+fi

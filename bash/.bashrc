@@ -33,7 +33,4 @@ alias gco='git checkout'
 alias gcom='git checkout master'
 alias gb='git branch'
 
-if [ -f .git-completion.bash ]; then
-	source .git-completion.bash
-fi
 	
