@@ -11,7 +11,7 @@ shopt -s cdspell
 shopt -s checkwinsize
 
 # Defaults
-PATH=$PATH:$HOME:/usr/local/bin:/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME:/usr/local/bin:/
 case $TERM in
     xterm*)
         PS1="\[\033]0;\007\]\[\e[1;30m\]☰  \e[0m"
