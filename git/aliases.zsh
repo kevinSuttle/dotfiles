@@ -1,0 +1,15 @@
+# Git aliases
+alias gs='git status'
+alias gp='git push'
+alias gpom='git push origin master'
+alias gphm='git push heroku master'
+alias ho='heroku open'
+alias gpr='git pull --rebase'
+alias glo='git log --oneline'
+alias gd='git diff'
+alias gc='git commit'
+alias gca='git commit --amend'
+alias gco='git checkout'
+alias gcom='git checkout master'
+alias gb='git branch'
+
