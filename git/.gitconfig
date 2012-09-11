@@ -7,7 +7,7 @@
 	log = auto
 	diff = auto
 	interactive = auto
-	ui = true
+	ui = auto
 	grep = auto
 [core]
 	editor = vim
