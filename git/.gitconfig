@@ -8,6 +8,7 @@
 	diff = auto
 	interactive = auto
 	ui = true
+	grep = auto
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
