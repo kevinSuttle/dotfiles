@@ -18,6 +18,7 @@ simple_prompt_on() {
 full_prompt_on() {
 	PROMPT="%{$fg_bold[black]%}☰ $reset_color "
 }
+
 prompt_off() {
 	PS1="\$ "
 }
