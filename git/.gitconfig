@@ -1,6 +1,8 @@
 [user]
 	name = Kevin Suttle
 	email = kevin@kevinsuttle.com
+[hub]
+	protocol = https
 [color]
 	status = auto
 	branch = auto
