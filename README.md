@@ -40,3 +40,12 @@ My additions:
                 <string>.conf</string>
                 <string>.screenrc</string>
                 <string>.hushlogin</string>
+                
+###Calling Sublime from the Command Line: A Correction
+For some reason, the documentation for Sublime Text 2 tells you that you need to symlink to ~/bin. Personally, I don't want that in my home directory. Besides, symlinks are meant to point anywhere by design, so why not have it point somewhere already on the path, where these kinds of things live anyway?  I just remove the ~, and put it in a place where it makes a bit more sense.     
+  
+**Note**: Because this is a system directory, you're going to need to authorize this symlink with your password. Only follow this if you know what you're doing.
+
+`ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /bin/subl`
+
+Then, in my `aliases.zsh` file, I make an alias for `subl` by adding `alias s='subl .'` Thanks [@mathias](https://github.com/mathiasbynens/dotfiles/blob/master/.aliases#L17).
