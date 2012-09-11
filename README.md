@@ -9,7 +9,7 @@ to [@pengwynn](http://twitter.com/pengwynn) for his [dotfile](http://wynnnetherl
 [@tyrmored](http://twitter.com/tyrmored) for the [implemenation details](http://blog.sanctum.geek.nz/managing-dot-files-with-git/). 
 
 ## Sublime Text Config
-Thanks to [@PaulIrish](http://twitter.com/paulirish) for this tip. Sublime doesn't ship knowing about *every* dotfile, so we can help it out a bit by editing it's Shell language configs. 
+Thanks to [@Paul_Irish](http://twitter.com/paul_irish) for this tip. Sublime doesn't ship knowing about *every* dotfile, so we can help it out a bit by editing it's Shell language configs. 
 
 1. Go here in your Terminal of choice
 
