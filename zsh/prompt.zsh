@@ -7,8 +7,8 @@ precmd() {
 }
 
 chpwd() {
+	# Set Terminal title to current directory dynamically
 	 print -Pn "\e]0; %~\a"
-	# echo $PWD
 }
 
 simple_prompt_on() {
