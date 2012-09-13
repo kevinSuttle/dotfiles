@@ -1,14 +1,15 @@
 " ----------------------------------------------------------------------------
-" Pathogen
+" Pathogen plugins
 " ----------------------------------------------------------------------------
 filetype off " Pathogen needs to run before plugin indent on
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect('~/Github/dotfiles/vim/.vim/bundle')
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags() " generate helptags for everything in 'runtimepath'
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " ----------------------------------------------------------------------------
-" Runtime config
+" General config
 " ----------------------------------------------------------------------------
 set nocompatible " Use Vim settings, rather than Vi settings (much better!).
 set autoread
