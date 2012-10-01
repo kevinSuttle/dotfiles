@@ -11,16 +11,16 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 " ----------------------------------------------------------------------------
 " General config
 " ----------------------------------------------------------------------------
-set nocompatible " Use Vim settings, rather than Vi settings (much better!).
+set nocompatible
 set autoread
 set hidden
 
-filetype plugin indent on " Enable file type detection and do language-dependent indenting.
+filetype plugin indent on
 
 " ----------------------------------------------------------------------------
 " Remapping
 " ----------------------------------------------------------------------------
-set backspace=indent,eol,start " Make backspace behave in a sane manner.
+set backspace=indent,eol,start
 inoremap jj <ESC>
 set pastetoggle=<F2>
 map <up> <nop>
@@ -32,16 +32,19 @@ map <right> <nop>
 " Text Formatting
 " ----------------------------------------------------------------------------
 syntax enable
-set encoding=utf-8 " Necessary to show Unicode glyphs
-set expandtab " expand tabs to spaces
+set encoding=utf-8
+set expandtab
 set nosmarttab
-
+set nowrap
+set softtabstop=2
+set shiftwidth=2
+set tabstop=4
 " ---------------------------------------------------------------------------
 "  UI
 " ---------------------------------------------------------------------------
-set nonumber
-set ch=2           " command line height
-set laststatus=2   " Always show the statusline
+set number
+set ch=2
+set laststatus=2
 set wildmenu
 set wildmode=list:longest,full
 
