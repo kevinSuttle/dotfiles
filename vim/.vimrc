@@ -39,6 +39,7 @@ set nowrap
 set softtabstop=2
 set shiftwidth=2
 set tabstop=4
+
 " ---------------------------------------------------------------------------
 "  UI
 " ---------------------------------------------------------------------------
@@ -47,6 +48,7 @@ set ch=2
 set laststatus=2
 set wildmenu
 set wildmode=list:longest,full
+set title
 
 " ---------------------------------------------------------------------------
 " GUI/MacVim options 
