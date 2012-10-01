@@ -12,7 +12,7 @@ alias -- -='cd -'
 alias cddf='cd ~/Github/dotfiles'
 
 # Shortcuts
-alias v='vim'
+alias v='mvim -v'
 alias s='subl .'
 alias o='open -R'
 alias t='tmux'
