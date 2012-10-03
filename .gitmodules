@@ -25,3 +25,6 @@
 [submodule "vim/.vim/bundle/vim-cucumber"]
 	path = vim/.vim/bundle/vim-cucumber
 	url = https://github.com/tpope/vim-cucumber.git
+[submodule "vim/.vim/bundle/vim-colors-solarized"]
+	path = vim/.vim/bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
