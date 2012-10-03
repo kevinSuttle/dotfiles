@@ -16,6 +16,12 @@
 [submodule "vim/.vim/bundle/ack.vim"]
 	path = vim/.vim/bundle/ack.vim
 	url = git://github.com/mileszs/ack.vim.git
-[submodule "/Users/kevinsuttle/Github/dotfiles/vim/.vim/bundle/ctrlp.vim"]
-	path = /Users/kevinsuttle/Github/dotfiles/vim/.vim/bundle/ctrlp.vim
+[submodule "vim/.vim/bundle/ctrlp.vim"]
+	path = vim/.vim/bundle/ctrlp.vim
 	url = git://github.com/kien/ctrlp.vim.git
+[submodule "vim/.vim/bundle/surround"]
+	path = vim/.vim/bundle/surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule "vim/.vim/bundle/vim-cucumber"]
+	path = vim/.vim/bundle/vim-cucumber
+	url = https://github.com/tpope/vim-cucumber.git
