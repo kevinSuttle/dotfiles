@@ -28,3 +28,9 @@
 [submodule "vim/.vim/bundle/vim-colors-solarized"]
 	path = vim/.vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "vim/bundle/CSScomb-for-Vim"]
+	path = vim/bundle/CSScomb-for-Vim
+	url = https://github.com/miripiruni/CSScomb-for-Vim.git
+[submodule "vim/bundle/vim-surround"]
+	path = vim/bundle/vim-surround
+	url = git://github.com/tpope/vim-surround.git
