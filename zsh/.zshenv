@@ -9,4 +9,5 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 export NODE_PATH="/usr/local/bin/node"
 
 # shortcut to this dotfiles path is $ZSH
+export ZSH=$HOME/Github/dotfiles/zsh
 export DOTFILES=$HOME/Github/dotfiles
