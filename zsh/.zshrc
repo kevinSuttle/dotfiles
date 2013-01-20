@@ -14,3 +14,9 @@ export LANG=en_US.UTF-8
 # Don't clear the screen after quitting a man page session
 export MANPAGER="less -X"
 
+# Git cloned rbenv
+eval "$(rbenv init -)"
+
+# If not running interactively, do not do anything
+#[[ $- != *i* ]] && return
+#[[ $TERM != screen* ]] && exec tmux
