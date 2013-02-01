@@ -13,6 +13,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 " ----------------------------------------------------------------------------
 set nocompatible
 set autoread
+set autowrite
 set hidden
 
 filetype plugin indent on
@@ -21,12 +22,13 @@ filetype plugin indent on
 " Remapping
 " ----------------------------------------------------------------------------
 set backspace=indent,eol,start
-inoremap jj <ESC>
+inoremap jk <ESC>
 set pastetoggle=<F2>
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
+nnoremap Y y$
 
 " ----------------------------------------------------------------------------
 " Text Formatting
@@ -49,11 +51,22 @@ set laststatus=2
 set wildmenu
 set wildmode=list:longest,full
 set title
+set showmatch
+set smarttab
+set showcmd
+set scrolloff=1
+set sidescrolloff=5
+set display+=lastline
 
 " ---------------------------------------------------------------------------
 " GUI/MacVim options 
 " ---------------------------------------------------------------------------
 set guioptions=egmrt
+
+" Allow color schemes to do bright colors without forcing bold.
+if &t_Co == 8 && $TERM !~# '^linux'
+   set t_Co=16
+   endif
 
 " ---------------------------------------------------------------------------
 " Strip all trailing whitespace in file
