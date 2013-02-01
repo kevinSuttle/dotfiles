@@ -17,6 +17,3 @@ export MANPAGER="less -X"
 # Git cloned rbenv
 eval "$(rbenv init -)"
 
-# If not running interactively, do not do anything
-#[[ $- != *i* ]] && return
-#[[ $TERM != screen* ]] && exec tmux
