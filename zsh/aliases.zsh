@@ -1,5 +1,8 @@
-# UNIX
-alias ls='ls -aFh'
+# List 
+alias ls='ls -aF'
+
+# List only directories
+alias lsd='ls -l | grep "^d"'
 
 # Easier navigation: Thanks @mathias, @gf3, et al.
 alias ..='cd ..'
