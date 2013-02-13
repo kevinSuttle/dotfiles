@@ -14,6 +14,7 @@ alias cdd='cd ~/Downloads/'
 alias v='vim'
 alias mvim='mvim -vp'
 
+# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
+# Thanks once again @Mathias
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update'
 
-# UPDATE ALL THE THINGS
-alias THUNDERCATS HO='brew update && gem update && npm update'
