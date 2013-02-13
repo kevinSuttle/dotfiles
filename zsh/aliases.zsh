@@ -11,7 +11,9 @@ alias cdg='cd ~/Github/'
 alias cdd='cd ~/Downloads/'
 
 # Shortcuts
-alias v='mvim -vp'
+alias v='vim'
+alias mvim='mvim -vp'
+
 
 # UPDATE ALL THE THINGS
 alias THUNDERCATS HO='brew update && gem update && npm update'
