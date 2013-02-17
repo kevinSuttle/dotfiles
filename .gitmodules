@@ -37,3 +37,21 @@
 [submodule "vim/.vim/bundle/vim-surround"]
 	path = vim/.vim/bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
+[submodule "vim/.vim/bundle/jslint.vim"]
+	path = vim/.vim/bundle/jslint.vim
+	url = git://github.com/hallettj/jslint.vim.git
+[submodule "vim/.vim/bundle/jshint.vim"]
+	path = vim/.vim/bundle/jshint.vim
+	url = git://github.com/walm/jshint.vim.git
+[submodule "vim/.vim/bundle/tabular"]
+	path = vim/.vim/bundle/tabular
+	url = git://github.com/godlygeek/tabular.git
+[submodule "vim/.vim/bundle/vim-coffee-script"]
+	path = vim/.vim/bundle/vim-coffee-script
+	url = git://github.com/kchmck/vim-coffee-script.git
+[submodule "vim/.vim/bundle/vim-fugitive"]
+	path = vim/.vim/bundle/vim-fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule "vim/.vim/bundle/zencoding-vim"]
+	path = vim/.vim/bundle/zencoding-vim
+	url = git://github.com/mattn/zencoding-vim.git
