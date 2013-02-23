@@ -3,25 +3,25 @@
 	url = https://github.com/tpope/vim-rails.git
 [submodule "vim/.vim/bundle/vim-pathogen"]
 	path = vim/.vim/bundle/vim-pathogen
-	url = git://github.com/tpope/vim-pathogen.git
+	url = https://github.com/tpope/vim-pathogen.git
 [submodule "vim/.vim/bundle/vim-powerline"]
 	path = vim/.vim/bundle/vim-powerline
-	url = git://github.com/Lokaltog/vim-powerline.git
+	url = https://github.com/Lokaltog/vim-powerline.git
 [submodule "vim/.vim/bundle/nerdtree"]
 	path = vim/.vim/bundle/nerdtree
-	url = git://github.com/scrooloose/nerdtree.git
+	url = https://github.com/scrooloose/nerdtree.git
 [submodule "vim/.vim/bundle/syntastic"]
 	path = vim/.vim/bundle/syntastic
-	url = git://github.com/scrooloose/syntastic.git
+	url = https://github.com/scrooloose/syntastic.git
 [submodule "vim/.vim/bundle/ack.vim"]
 	path = vim/.vim/bundle/ack.vim
-	url = git://github.com/mileszs/ack.vim.git
+	url = https://github.com/mileszs/ack.vim.git
 [submodule "vim/.vim/bundle/ctrlp.vim"]
 	path = vim/.vim/bundle/ctrlp.vim
-	url = git://github.com/kien/ctrlp.vim.git
+	url = https://github.com/kien/ctrlp.vim.git
 [submodule "vim/.vim/bundle/surround"]
 	path = vim/.vim/bundle/surround
-	url = git://github.com/tpope/vim-surround.git
+	url = https://github.com/tpope/vim-surround.git
 [submodule "vim/.vim/bundle/vim-cucumber"]
 	path = vim/.vim/bundle/vim-cucumber
 	url = https://github.com/tpope/vim-cucumber.git
@@ -30,22 +30,22 @@
 	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "vim/.vim/bundle/vim-surround"]
 	path = vim/.vim/bundle/vim-surround
-	url = git://github.com/tpope/vim-surround.git
+	url = https://github.com/tpope/vim-surround.git
 [submodule "vim/.vim/bundle/jslint.vim"]
 	path = vim/.vim/bundle/jslint.vim
-	url = git://github.com/hallettj/jslint.vim.git
+	url = https://github.com/hallettj/jslint.vim.git
 [submodule "vim/.vim/bundle/jshint.vim"]
 	path = vim/.vim/bundle/jshint.vim
-	url = git://github.com/walm/jshint.vim.git
+	url = https://github.com/walm/jshint.vim.git
 [submodule "vim/.vim/bundle/tabular"]
 	path = vim/.vim/bundle/tabular
-	url = git://github.com/godlygeek/tabular.git
+	url = https://github.com/godlygeek/tabular.git
 [submodule "vim/.vim/bundle/vim-coffee-script"]
 	path = vim/.vim/bundle/vim-coffee-script
-	url = git://github.com/kchmck/vim-coffee-script.git
+	url = https://github.com/kchmck/vim-coffee-script.git
 [submodule "vim/.vim/bundle/vim-fugitive"]
 	path = vim/.vim/bundle/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "vim/.vim/bundle/zencoding-vim"]
 	path = vim/.vim/bundle/zencoding-vim
-	url = git://github.com/mattn/zencoding-vim.git
+	url = https://github.com/mattn/zencoding-vim.git
