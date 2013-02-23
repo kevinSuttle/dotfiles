@@ -1,6 +1,5 @@
 # Environment Variables
 export PATH="/usr/local/bin:$PATH"
-export PATH=${PATH}:$HOME/Development/adt-bundle-mac-x86_64/sdk/platform-tools:$HOME/Development/adt-bundle-mac-x86_64/sdk/tools
 
 ## Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
