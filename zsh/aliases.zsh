@@ -6,8 +6,8 @@ alias lsd='ls -l | grep "^d"'
 
 # Easier navigation: Thanks @mathias, @gf3, et al.
 alias ..='cd ..'
-alias cddf='cd ~/Github/dotfiles'
-alias cdg='cd ~/Github/'
+alias cddf='cd ~/Code/dotfiles'
+alias cdg='cd ~/Code/'
 alias cdd='cd ~/Downloads/'
 
 # Shortcuts

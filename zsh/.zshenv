@@ -12,4 +12,4 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 export NODE_PATH="/usr/local/bin/node"
 
 # shortcut to this dotfiles repo
-export DOTFILES=$HOME/Github/dotfiles
+export DOTFILES=$HOME/Code/dotfiles
