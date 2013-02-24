@@ -21,3 +21,5 @@
 [merge]
 	tool = opendiff
 	keepBackup = false
+[push]
+	default = simple
