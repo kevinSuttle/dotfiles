@@ -3,7 +3,7 @@ case "$TERM" in
 	xterm*) TERM=xterm-256color
 esac
 
-source "`brew --prefix`/etc/grc.bashrc"
+[ -f `brew --prefix`/etc/grc.bashrc ] && source `brew --prefix`/etc/grc.bashrc
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
