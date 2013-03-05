@@ -7,4 +7,4 @@ autoload -U colors && colors
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-source "`brew --prefix`/etc/grc.bashrc"
+[ -f /opt/boxen/homebrew/etc/grc.bashrc ] &&  source /opt/boxen/homebrew/etc/grc.bashrc
