@@ -11,11 +11,11 @@
 	grep = auto
 [core]
 	editor = vim
-	excludesfile = ~/.gitignore
+	excludesfile = /opt/boxen/config/git/gitignore
 [github]
 	user = kevinSuttle
 [credential]
-	helper = osxkeychain
+	helper = /opt/boxen/bin/boxen-git-credential
 [diff]
 	tool = opendiff
 [merge]
@@ -23,3 +23,6 @@
 	keepBackup = false
 [push]
 	default = simple
+
+[hub]
+protocol = https
