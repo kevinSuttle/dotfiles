@@ -15,7 +15,7 @@ set nocompatible
 set autoread
 set autowrite
 set hidden
-
+set visualbell t_vb=
 filetype plugin indent on
 
 " ----------------------------------------------------------------------------
@@ -29,6 +29,8 @@ map <down> <nop>
 map <left> <nop>
 map <right> <nop>
 nnoremap Y y$
+map j gj
+map k gk
 
 " ----------------------------------------------------------------------------
 " Text Formatting
@@ -41,6 +43,8 @@ set nowrap
 set softtabstop=2
 set shiftwidth=2
 set tabstop=4
+set autoindent
+set linebreak
 
 " ---------------------------------------------------------------------------
 "  UI
