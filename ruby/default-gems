@@ -1,6 +1,7 @@
 jekyll 
 sass 
 compass
+rack
 rails
 bundler 
 rake 
@@ -9,4 +10,3 @@ foreman
 cucumber
 rdiscount
 pg
-rack
