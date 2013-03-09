@@ -1,29 +1,13 @@
 #!/usr/bin/env zsh
 
-sudo -v
+# Generate SSH key for Github
+script/bootstrap-ssh
 
-ssh-keygen -t rsa
-cat ~/.ssh/id_rsa.pub | pbcopy
-open https://github.com/account/ssh
-
-# RBenv 
-git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-git clone https://github.com/sstephenson/rbenv-default-gems.git ~/.rbenv/plugins/rbenv-default-gems
-ln -s $DOTFILES/ruby/default-gems ~/.rbenv/default-gems
-exec $SHELL -l 
-rbenv rehash
-rbenv install 1.9.3-p392
+# Ruby via RBenv 
+script/bootstrap-ruby
 
 # Dotfiles
-git clone https://github.com/kevinSuttle/dotfiles ~/Code/dotfiles
-script/bootstrap-symlinks
-
-git clone https://github.com/altercation/solarized.git ~/Code/solarized
-
-cd ~/Code/dotfiles
-git submodule init
-git submodule update
+script/bootstrap-dotfiles
 
 chsh -s 'brew --prefix'/bin/zsh kevinsuttle
 
