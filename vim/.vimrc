@@ -61,7 +61,7 @@ set showcmd
 set scrolloff=1
 set sidescrolloff=5
 set display+=lastline
-
+set virtualedit=onemore
 " ---------------------------------------------------------------------------
 " GUI/MacVim options 
 " ---------------------------------------------------------------------------
