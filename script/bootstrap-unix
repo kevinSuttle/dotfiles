@@ -10,20 +10,21 @@ open https://github.com/account/ssh
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 git clone https://github.com/sstephenson/rbenv-default-gems.git ~/.rbenv/plugins/rbenv-default-gems
-ln -s ~/Code/dotfiles/ruby/default-gems ~/.rbenv/default-gems
+ln -s $DOTFILES/ruby/default-gems ~/.rbenv/default-gems
 exec $SHELL -l 
 rbenv rehash
 rbenv install 1.9.3-p392
-git clone https://github.com/altercation/solarized.git ~/Code/solarized
 
 # Dotfiles
 git clone https://github.com/kevinSuttle/dotfiles ~/Code/dotfiles
 script/bootstrap-symlinks
 
-cd ~/Code/dotfiles/
+git clone https://github.com/altercation/solarized.git ~/Code/solarized
+
+cd $DOTFILES
 git submodule init
 git submodule update
 
-chsh -s /usr/local/bin/zsh kevinsuttle
+chsh -s 'brew --prefix'/bin/zsh kevinsuttle
 
 exec $SHELL -l

@@ -6,7 +6,7 @@ alias lsd='ls -l | grep "^d"'
 
 # Easier navigation: Thanks @mathias, @gf3, et al.
 alias ..='cd ..'
-alias cddf='cd ~/Code/dotfiles'
+alias cddf='cd $DOTFILES'
 alias cdc='cd ~/Code/'
 alias cdd='cd ~/Downloads/'
 
