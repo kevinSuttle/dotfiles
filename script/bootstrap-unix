@@ -21,7 +21,7 @@ script/bootstrap-symlinks
 
 git clone https://github.com/altercation/solarized.git ~/Code/solarized
 
-cd $DOTFILES
+cd ~/Code/dotfiles
 git submodule init
 git submodule update
 
