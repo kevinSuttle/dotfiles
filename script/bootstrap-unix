@@ -9,7 +9,7 @@ open https://github.com/account/ssh
 # RBenv 
 git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
 git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-rbenv install 1.9.3-p385
+rbenv install 1.9.3-p392
 rbenv rehash
 git clone https://github.com/sstephenson/rbenv-default-gems.git ~/.rbenv/plugins/rbenv-default-gems
 
