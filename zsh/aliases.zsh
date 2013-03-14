@@ -12,7 +12,8 @@ alias cdd='cd ~/Downloads/'
 
 # Shortcuts
 alias v='vim'
-alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
+alias gvim='~/Applications/MacVim.app/Contents/MacOS/Vim -g'
+alias mvim='~/Applications/MacVim.app/Contents/MacOS/Vim -vf'
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 # Thanks once again @Mathias
