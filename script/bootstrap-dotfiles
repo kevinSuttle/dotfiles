@@ -8,17 +8,5 @@ cd ~/Code/dotfiles
 git submodule init
 git submodule update
 
-ln -s $DOTFILES/.hushlogin ~/.hushlogin
-ln -s $DOTFILES/.inputrc ~/.inputrc
-ln -s $DOTFILES/.screenrc ~/.screenrc
-ln -s $DOTFILES/bash/.bashrc ~/.bashrc
-ln -s $DOTFILES/git/.gitconfig ~/.gitconfig
-ln -s $DOTFILES/git/.gitignore ~/.gitignore
-ln -s $DOTFILES/ruby/.gemrc ~/.gemrc
-ln -s $DOTFILES/vim/.vimrc ~/.vimrc
-ln -s $DOTFILES/vim/.vim ~/.vim
-ln -s $DOTFILES/vim/.gvimrc ~/.gvimrc
-ln -s $DOTFILES/zsh/.zshrc ~/.zshrc
-ln -s $DOTFILES/zsh/.zshenv ~/.zshenv
-
+script/bootstrap-symlinks
 source ~/.zshrc
