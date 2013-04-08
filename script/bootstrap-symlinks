@@ -4,6 +4,7 @@ ln -s $DOTFILES/.screenrc ~/.screenrc
 ln -s $DOTFILES/bash/.bashrc ~/.bashrc
 ln -s $DOTFILES/git/.gitconfig ~/.gitconfig
 ln -s $DOTFILES/git/.gitignore ~/.gitignore
+ln -s $DOTFILES/.tmux.conf ~/.tmux.conf
 ln -s $DOTFILES/ruby/.gemrc ~/.gemrc
 ln -s $DOTFILES/vim/.vimrc ~/.vimrc
 ln -s $DOTFILES/vim/.vim ~/.vim
