@@ -17,8 +17,11 @@ bindkey '^P' history-search-backward
 bindkey '^N' history-search-forward  
 
 # Misc
-# Don't clear the screen after quitting a man page session
+## Don't clear the screen after quitting a man page session
 export MANPAGER="less -X"
+
+## Change directories without fully qualified path
+setopt AUTO_CD
 
 # Git cloned rbenv
 eval "$(rbenv init -)"
