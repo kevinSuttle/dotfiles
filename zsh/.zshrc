@@ -5,10 +5,16 @@ autoload -U compinit
 compinit
 
 # Editor prefs
-set -o vi
 export EDITOR=vim
+bindkey -v
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+## vi style incremental search
+bindkey '^R' history-incremental-search-backward
+bindkey '^S' history-incremental-search-forward
+bindkey '^P' history-search-backward
+bindkey '^N' history-search-forward  
 
 # Misc
 # Don't clear the screen after quitting a man page session
