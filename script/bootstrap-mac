@@ -1,0 +1,49 @@
+#!/usr/bin/env zsh
+
+sudo -v
+
+# Binaries
+# Xcode from Mac App Store
+echo "Be sure to install XCode and its Command Line Tools"
+
+# THOUGHTBOT LAPTOP
+
+successfully() {
+  $* || (echo "failed" 1>&2 && exit 1)
+}
+
+echo "Checking for SSH key, generating one if it doesn't exist ..."
+  [[ -f ~/.ssh/id_rsa.pub ]] || ssh-keygen -t rsa
+
+echo "Copying public key to clipboard. Paste it into your Github account ..."
+  [[ -f ~/.ssh/id_rsa.pub ]] && cat ~/.ssh/id_rsa.pub | pbcopy
+  successfully open https://github.com/account/ssh
+
+echo "Fixing permissions ..."
+  successfully sudo mkdir -p /usr/local
+  successfully sudo chown -R `whoami` /usr/local
+
+echo "Installing Homebrew, a good OS X package manager ..."
+  successfully ruby <(curl -fsS https://raw.github.com/mxcl/homebrew/go)
+  successfully brew update
+
+brew tap homebrew/dupes
+brew install git zsh bash coreutils autoconf automake apple-gcc42 openssl mercurial macvim tmux reattach-to-user-namespace grc the_silver_searcher redis rbenv rbenv-gem-rehash ruby-build postgres --no-python 
+brew update
+brew doctor
+
+# Dotfiles
+script/bootstrap-dotfiles
+
+# Run .osx bootstrap script
+.osx
+# sudo ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /bin/subl
+open $HOME/Code/solarized/osx-terminal.app-colors-solarized/xterm-256color/Solarized\ Dark\ xterm-256color.terminal
+sleep 1 # Wait a bit to make sure the theme is loaded
+defaults write com.apple.terminal "Default Window Settings" -string "Solarized Dark xterm-256color"
+defaults write com.apple.terminal "Startup Window Settings" -string "Solarized Dark xterm-256color"
+
+curl http://cloud.github.com/downloads/whomwah/qlstephen/QLStephen.qlgenerator.zip 
+sudo cp ~/Downloads/QLStephen.qlgenerator /Library/Quicklook
+
+exec $SHELL -l
