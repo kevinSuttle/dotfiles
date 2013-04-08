@@ -3,10 +3,26 @@
 " ----------------------------------------------------------------------------
 filetype off " Pathogen needs to run before plugin indent on
 runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect('~/Github/dotfiles/vim/.vim/bundle')
+call pathogen#infect('$DOTFILES/vim/.vim/bundle')
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags() " generate helptags for everything in 'runtimepath'
+
+"CtrlP"
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+"" Vim-Powerline
+let g:Powerline_symbols = 'fancy'
+if ! has('gui_running')
+    set ttimeoutlen=10
+    augroup FastEscape
+        autocmd!
+        au InsertEnter * set timeoutlen=0
+        au InsertLeave * set timeoutlen=1000
+    augroup END
+endif
+
+" Powerline
+set rtp+=$DOTFILES/vim/.vim/bundle/powerline/bindings/vim
 
 " ----------------------------------------------------------------------------
 " General config
@@ -21,6 +37,14 @@ filetype plugin indent on
 " ----------------------------------------------------------------------------
 " Remapping
 " ----------------------------------------------------------------------------
+
+"" Yank text to the OS X clipboard
+noremap <leader>y "*y
+noremap <leader>yy "*Y"
+
+"" Preserve indentation while pasting text from the OS X clipboard
+noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
+
 set backspace=indent,eol,start
 inoremap jk <ESC>
 set pastetoggle=<F2>
@@ -33,9 +57,12 @@ map j gj
 map k gk
 
 " ----------------------------------------------------------------------------
-" Text Formatting
+" Text Formatting / Color Highlighting
 " ----------------------------------------------------------------------------
 syntax enable
+let g:solarized_termtrans = 1
+colorscheme solarized
+ 
 set encoding=utf-8
 set expandtab
 set nosmarttab
@@ -62,6 +89,7 @@ set scrolloff=1
 set sidescrolloff=5
 set display+=lastline
 set virtualedit=onemore
+
 " ---------------------------------------------------------------------------
 " GUI/MacVim options 
 " ---------------------------------------------------------------------------

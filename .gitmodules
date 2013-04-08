@@ -52,3 +52,6 @@
 [submodule "vim/.vim/bundle/vim-gitguttter"]
 	path = vim/.vim/bundle/vim-gitguttter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "vim/.vim/bundle/powerline"]
+	path = vim/.vim/bundle/powerline
+	url = https://github.com/Lokaltog/powerline.git
