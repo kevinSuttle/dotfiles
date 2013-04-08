@@ -1,6 +1,7 @@
 alias gs='git status -sb'
 alias gph='git push'
 alias guph='git push -f origin HEAD^:master'
+alias guc='git reset --soft HEAD^'
 alias gpl='git pull'
 alias gpr='git pull --rebase'
 alias gpum='git pull upstream master'
