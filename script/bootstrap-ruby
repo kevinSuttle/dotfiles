@@ -1,8 +1,9 @@
-git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-git clone https://github.com/sstephenson/rbenv-default-gems.git ~/.rbenv/plugins/rbenv-default-gems
+brew install rbenv
+brew install rbenv-default-gems
+brew install ruby-build
 ln -s $DOTFILES/ruby/default-gems ~/.rbenv/default-gems
 exec $SHELL -l 
 rbenv rehash
-rbenv install 1.9.3-p392
-rbenv global 1.9.3-p392 
+rbenv install 2.0.0-p0
+rbenv global 2.0.0-p0
+gem update --system
