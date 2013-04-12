@@ -1,5 +1,6 @@
 brew install rbenv
 brew install rbenv-default-gems
+brew install rbenv-gem-rehash
 brew install ruby-build
 ln -s $DOTFILES/ruby/default-gems ~/.rbenv/default-gems
 exec $SHELL -l 

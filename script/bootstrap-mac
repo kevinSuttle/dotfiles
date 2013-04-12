@@ -28,7 +28,9 @@ echo "Installing Homebrew, a good OS X package manager ..."
   successfully brew update
 
 brew tap homebrew/dupes
-brew install git zsh bash coreutils autoconf automake apple-gcc42 openssl mercurial macvim tmux reattach-to-user-namespace grc the_silver_searcher redis rbenv rbenv-gem-rehash ruby-build postgres --no-python 
+brew install git zsh bash coreutils autoconf automake apple-gcc42 openssl mercurial macvim tmux reattach-to-user-namespace grc the_silver_searcher redis postgres --no-python 
+script/bootstrap-ruby
+script/bootstrap-node
 brew update
 brew doctor
 

@@ -1,0 +1,3 @@
+brew install node
+brew install mongodb
+npm install -g coffee-script grunt jasmine-node stylus express mocha less jshint yeoman uglify-js yo grunt-cli phantomjs requirejs zepto
