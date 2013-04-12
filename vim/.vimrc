@@ -10,7 +10,8 @@ call pathogen#helptags() " generate helptags for everything in 'runtimepath'
 "CtrlP"
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
-"" Vim-Powerline
+" Powerline
+set rtp+=$DOTFILES/vim/.vim/bundle/powerline/bindings/vim
 let g:Powerline_symbols = 'fancy'
 if ! has('gui_running')
     set ttimeoutlen=10
@@ -20,9 +21,6 @@ if ! has('gui_running')
         au InsertLeave * set timeoutlen=1000
     augroup END
 endif
-
-" Powerline
-set rtp+=$DOTFILES/vim/.vim/bundle/powerline/bindings/vim
 
 " ----------------------------------------------------------------------------
 " General config
