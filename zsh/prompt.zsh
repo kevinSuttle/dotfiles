@@ -12,11 +12,11 @@ chpwd() {
 }
 
 simple_prompt_on() {
-	PROMPT="%{$fg[red]%}§ $reset_color "
+	PROMPT="%{$fg_bold[blue]%}$ $reset_color "
 }
 
 full_prompt_on() {
-	PROMPT="%{$fg[red]%}§ $reset_color "
+	PROMPT="%{$fg_bold[blue]%}$ $reset_color "
 }
 
 prompt_off() {
