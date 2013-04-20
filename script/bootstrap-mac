@@ -32,13 +32,11 @@ script/bootstrap-dotfiles
 
 # Run .osx bootstrap script
 .osx
-# sudo ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /bin/subl
+
+# Terminal color theme
 open $HOME/Code/solarized/osx-terminal.app-colors-solarized/xterm-256color/Solarized\ Dark\ xterm-256color.terminal
 sleep 1 # Wait a bit to make sure the theme is loaded
 defaults write com.apple.terminal "Default Window Settings" -string "Solarized Dark xterm-256color"
 defaults write com.apple.terminal "Startup Window Settings" -string "Solarized Dark xterm-256color"
-
-curl http://cloud.github.com/downloads/whomwah/qlstephen/QLStephen.qlgenerator.zip 
-sudo cp ~/Downloads/QLStephen.qlgenerator /Library/Quicklook
 
 exec $SHELL -l
