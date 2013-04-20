@@ -1,8 +1,10 @@
 # source every .zsh file in this repo
 for config_file ($DOTFILES/**/*.zsh) source $config_file
 
+# Completions
 autoload -U compinit
 compinit
+fpath=(/usr/local/share/zsh-completions $fpath)
 
 # Editor prefs
 export EDITOR=vim
