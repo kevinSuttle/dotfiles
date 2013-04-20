@@ -34,9 +34,6 @@
 [submodule "vim/.vim/bundle/jslint.vim"]
 	path = vim/.vim/bundle/jslint.vim
 	url = https://github.com/hallettj/jslint.vim.git
-[submodule "vim/.vim/bundle/jshint.vim"]
-	path = vim/.vim/bundle/jshint.vim
-	url = https://github.com/walm/jshint.vim.git
 [submodule "vim/.vim/bundle/tabular"]
 	path = vim/.vim/bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
