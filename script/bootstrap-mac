@@ -23,16 +23,9 @@ echo "Fixing permissions ..."
   successfully sudo mkdir -p /usr/local
   successfully sudo chown -R `whoami` /usr/local
 
-echo "Installing Homebrew, a good OS X package manager ..."
-  successfully ruby <(curl -fsS https://raw.github.com/mxcl/homebrew/go)
-  successfully brew update
-
-brew tap homebrew/dupes
-brew install git zsh bash coreutils autoconf automake apple-gcc42 openssl mercurial macvim tmux reattach-to-user-namespace grc the_silver_searcher redis ack wget postgres --no-python 
+script/bootstrap-homebrew
 script/bootstrap-ruby
 script/bootstrap-node
-brew update
-brew doctor
 
 # Dotfiles
 script/bootstrap-dotfiles
