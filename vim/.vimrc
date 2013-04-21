@@ -3,8 +3,8 @@
 " ----------------------------------------------------------------------------
 filetype off " Pathogen needs to run before plugin indent on
 runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect('$DOTFILES/vim/.vim/bundle')
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect('$DOTFILES/vim/.vim/bundle/{}')
+call pathogen#incubate()
 call pathogen#helptags() " generate helptags for everything in 'runtimepath'
 
 "CtrlP"
