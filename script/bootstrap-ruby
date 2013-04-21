@@ -1,10 +1,11 @@
 brew install rbenv
-brew install rbenv-default-gems
 brew install rbenv-gem-rehash
 brew install ruby-build
+brew install rbenv-default-gems
 ln -s $DOTFILES/ruby/default-gems ~/.rbenv/default-gems
 exec $SHELL -l 
 rbenv rehash
+eval "$(rbenv init -)"
 rbenv install 2.0.0-p0
 rbenv global 2.0.0-p0
 gem update --system
