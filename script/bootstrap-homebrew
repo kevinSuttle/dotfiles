@@ -1,9 +1,26 @@
 #!/usr/bin/env zsh
-echo "Installing Homebrew, a good OS X package manager ..."
-  ruby <(curl -fsS https://raw.github.com/mxcl/homebrew/go)
-  brew update
+ruby <(curl -fsS https://raw.github.com/mxcl/homebrew/go)
+brew update
  
 brew tap homebrew/dupes
-brew install git zsh bash coreutils autoconf automake apple-gcc42 openssl mercurial macvim tmux reattach-to-user-namespace grc the_silver_searcher redis ack wget postgres --no-python 
+brew install git 
+brew install zsh 
+brew install bash 
+brew install coreutils 
+brew install autoconf 
+brew install automake 
+brew install apple-gcc42 
+brew install openssl 
+brew install mercurial 
+brew install macvim --override-system-vim
+brew install tmux 
+brew install reattach-to-user-namespace 
+brew install grc 
+brew install redis 
+brew install wget 
+brew install the_silver_searcher 
+brew install ctags
+brew install postgres --no-python 
+
 brew update
 brew doctor
