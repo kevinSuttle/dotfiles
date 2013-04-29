@@ -5,7 +5,6 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
 
 ## For RBEnv
-eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/bin:$PATH"
 
 ## For Node CLAs

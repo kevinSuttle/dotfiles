@@ -57,3 +57,6 @@ setopt CORRECT CORRECT_ALL
 
 # Enable extended globbing
 setopt EXTENDED_GLOB
+
+# Load RBenv
+eval "$(rbenv init -)"
