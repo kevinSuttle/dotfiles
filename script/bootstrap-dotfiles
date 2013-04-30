@@ -1,6 +1,5 @@
 # Dotfiles
 git clone https://github.com/kevinSuttle/dotfiles ~/Code/dotfiles
-script/bootstrap-symlinks
 
 git clone https://github.com/altercation/solarized.git ~/Code/solarized
 
