@@ -10,3 +10,4 @@ foreman
 cucumber
 rdiscount
 pg
+pry

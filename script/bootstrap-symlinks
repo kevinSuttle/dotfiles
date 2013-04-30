@@ -6,6 +6,8 @@ ln -s $DOTFILES/git/.gitconfig ~/.gitconfig
 ln -s $DOTFILES/git/.gitignore ~/.gitignore
 ln -s $DOTFILES/.tmux.conf ~/.tmux.conf
 ln -s $DOTFILES/ruby/.gemrc ~/.gemrc
+ln -s $DOTFILES/ruby/.pryrc ~/.pryrc
+ln -s $DOTFILES/ruby/default-gems ~/.rbenv/default-gems
 ln -s $DOTFILES/vim/.vimrc ~/.vimrc
 ln -s $DOTFILES/vim/.vim ~/.vim
 ln -s $DOTFILES/vim/.gvimrc ~/.gvimrc
