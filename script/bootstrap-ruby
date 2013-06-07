@@ -5,6 +5,7 @@ brew install rbenv-default-gems
 exec $SHELL -l 
 rbenv rehash
 eval "$(rbenv init -)"
-rbenv install 2.0.0-p0
-rbenv global 2.0.0-p0
+rbenv install 2.0.0-p195
+rbenv install 1.9.3-p429
+rbenv global 2.0.0-p195
 gem update --system
