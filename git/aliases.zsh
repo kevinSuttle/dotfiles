@@ -1,3 +1,4 @@
+alias gcl='git clone'
 alias gs='git status -sb'
 alias gph='git push'
 alias guph='git push -f origin "HEAD^:master"'
