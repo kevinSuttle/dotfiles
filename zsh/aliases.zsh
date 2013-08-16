@@ -9,6 +9,7 @@ alias ..='cd ..'
 alias cddf='cd $DOTFILES'
 alias cdc='cd ~/Code/'
 alias cdd='cd ~/Downloads/'
+alias cds='cd ~/Code/kevinsuttle.github.io'
 
 # Shortcuts
 alias v='vim'
