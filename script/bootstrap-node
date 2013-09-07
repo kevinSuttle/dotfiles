@@ -1,3 +1,0 @@
-brew install node
-brew install mongodb
-npm install -g coffee-script jasmine-node stylus express mocha less jshint uglify-js yo phantomjs requirejs zepto weinre zombie grunt-cli grunt-contrib-watch grunt-autoprefixer colors underscore async commander socket.io jade redis mongoose request lodash backbone bower mongodb should hogan.js

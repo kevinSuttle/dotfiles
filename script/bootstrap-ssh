@@ -1,3 +1,0 @@
-sudo -v
-ssh-keygen -t rsa
-cat ~/.ssh/id_rsa.pub | pbcopy && open https://github.com/settings/ssh
