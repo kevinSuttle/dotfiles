@@ -1,0 +1,25 @@
+autoload -U promptinit
+promptinit
+
+# FUNCTIONS
+precmd() {
+	chpwd
+	full_prompt_on
+}
+
+chpwd() {
+	# Set Terminal title to current directory dynamically
+	 print -Pn "\e]0; %~\a"
+}
+
+simple_prompt_on() {
+	PROMPT="%{$fg_bold[blue]%}$ $reset_color "
+}
+
+full_prompt_on() {
+	PROMPT="%{$fg_bold[blue]%}$ $reset_color "
+}
+
+prompt_off() {
+	PS1="\$ "
+}

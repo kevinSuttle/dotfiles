@@ -1,7 +1,12 @@
-source ~/.bashrc
+# REQUIRES BASH 4
 
-# Bash 4.0 settings
-shopt -s globstar autocd
+# Enable some Bash 4 features when possible:
+# * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
+# * Recursive globbing, e.g. `echo **/*.txt`
+for option in autocd globstar; do
+	shopt -s "$option" 2> /dev/null
+done
+
 
 # Make 'cd' more forgiving http://blog.sanctum.geek.nz/smarter-directory-navigation/
 shopt -s cdspell
@@ -10,33 +15,33 @@ shopt -s cdspell
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-# Defaults
-export PATH="/usr/local/bin:$PATH"
+# Case-insensitive globbing (used in pathname expansion)
+shopt -s nocaseglob
 
-# Functions
-simple_prompt_on() {
-	PS1="\[\e[1;30m\]☰  \e[0m"
+# Append to the Bash history file, rather than overwriting it
+shopt -s histappend
+
+# Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
+[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2 | tr ' ' '\n')" scp sftp ssh
+
+# Add tab completion for `defaults read|write NSGlobalDomain`
+# You could just use `-g` instead, but I like being explicit
+complete -W "NSGlobalDomain" defaults
+
+# Add `killall` tab completion for common apps
+complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall
+
+# If possible, add tab completion for many more commands
+[ -f /etc/bash_completion ] && source /etc/bash_completion
+
+
+function parse_git_dirty() {
+	[[ $(git status 2> /dev/null | tail -n1) != *"working directory clean"* ]] && echo "*"
 }
 
-full_prompt_on() {
-	PS1="\[\033]0;\007\]\[\e[1;30m\]☰  \e[0m"
-}
-prompt_off() {
-	PS1="\$ "
+function parse_git_branch() {
+	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
 }
 
-case $TERM in
-    xterm*)
-	    full_prompt_on 
-        ;;
-    *)
-	    simple_prompt_on
-        ;;
-esac
-
-# For Homebrew installed rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-if [ -f .git-completion.bash ]; then
-	source .git-completion.bash
-fi
+export PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]at \[$ORANGE\]\h \[$WHITE\]in \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]\n\$ \[$RESET\]"
+export PS2="\[$ORANGE\]→ \[$RESET\]"

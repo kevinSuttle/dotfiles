@@ -1,0 +1,40 @@
+# Homebrew
+export PATH="/usr/local/bin:usr/bin:$PATH"
+ 
+# Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+ 
+# RBEnv
+export PATH="$HOME/.rbenv/bin:$PATH"
+ 
+# Node
+export NODE_PATH="/usr/local/bin/node"
+ 
+# NPM
+export PATH="/usr/local/share/npm/bin:$PATH"
+
+# Homebrew cask
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+# shortcut to main dotfiles repo
+export DOTFILES=~/Code/dotfiles
+
+# Editor prefs
+export EDITOR=vim
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# keep TONS of history
+export HISTSIZE=4096
+
+# Highlight section titles in manual pages
+export LESS_TERMCAP_md="$ORANGE"
+
+# Don’t clear the screen after quitting a manual page
+export MANPAGER="less -X"
+
+# Always enable colored `grep` output
+export GREP_OPTIONS="--color=auto"
+
+#
+export dirstacksize=5
