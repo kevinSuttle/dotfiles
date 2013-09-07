@@ -1,28 +1,29 @@
 [user]
 	name = Kevin Suttle
 	email = kevin@kevinsuttle.com
-[color]
-	status = auto
-	branch = auto
-	log = auto
-	diff = auto
-	interactive = auto
-	ui = auto
-	grep = auto
-[core]
-	editor = vim
-	excludesfile = /opt/boxen/config/git/gitignore
 [github]
 	user = kevinSuttle
 [credential]
-	helper = /opt/boxen/bin/boxen-git-credential
+	helper = osxkeychain
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+[color]
+	status = true
+	branch = true
+	log = true
+	diff = true
+	interactive = true
+	ui = true
+	grep = true
+[push]
+	default = simple
 [diff]
 	tool = opendiff
 [merge]
 	tool = opendiff
 	keepBackup = false
-[push]
-	default = simple
-
+[mergetool]
+	keepBackup = false
 [hub]
-protocol = https
+	protocol = https
