@@ -1,15 +1,15 @@
 # Homebrew
 export PATH="/usr/local/bin:usr/bin:$PATH"
- 
+
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
- 
+
 # RBEnv
 export PATH="$HOME/.rbenv/bin:$PATH"
- 
+
 # Node
 export NODE_PATH="/usr/local/bin/node"
- 
+
 # NPM
 export PATH="/usr/local/share/npm/bin:$PATH"
 
