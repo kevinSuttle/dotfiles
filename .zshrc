@@ -1,5 +1,5 @@
 # source every .file in this repo
-for config_file ($DOTFILES/{.aliases,.colors,.exports,.functions,.zsh_prompt}) source $config_file
+for config_file (~/Code/dotfiles/{.aliases,.colors,.exports,.functions,.zsh_prompt}) source $config_file
 
 # Completions
 autoload -U compinit
