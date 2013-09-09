@@ -1,5 +1,5 @@
 # source every .file in this repo
-for config_file (~/Code/dotfiles/{.aliases,.colors,.exports,.functions,zsh/.zsh_prompt}) source $config_file
+for config_file (~/Code/dotfiles/{.aliases,.colors,.exports,.functions}) source $config_file
 
 # Completions
 autoload -U compinit
@@ -14,7 +14,7 @@ bindkey -v
 bindkey '^R' history-incremental-search-backward
 bindkey '^S' history-incremental-search-forward
 bindkey '^P' history-search-backward
-bindkey '^N' history-search-forward  
+bindkey '^N' history-search-forward
 
 # add some readline keys back
 bindkey "^A" beginning-of-line
@@ -89,3 +89,5 @@ bindkey '^?' backward-delete-char
 
 # Load RBenv
 eval "$(rbenv init -)"
+
+. ~/Code/pure/pure.zsh
