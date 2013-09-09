@@ -1,60 +1,12 @@
-" ----------------------------------------------------------------------------
-" Vundle plugin manager
-" ----------------------------------------------------------------------------
-filetype off                   " required!
+" source every vim file
+source ~/.gvimrc
+source ~/.vimrc.bundles
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
-
-" original repos on github
-Bundle 'tpope/vim-rails'
-Bundle 'rking/ag.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'csscomb/CSScomb-for-Vim'
-Bundle 'mattn/emmet-vim'
-Bundle 'sjl/gundo.vim'
-Bundle 'hallettj/jslint.vim'
-Bundle 'Shougo/neocomplcache.vim'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle 'myusuf3/numbers.vim'
-Bundle 'scrooloose/syntastic'
-Bundle 'godlygeek/tabular'
-Bundle 'majutsushi/tagbar'
-Bundle 'bling/vim-airline'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'tpope/vim-fugitive'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'tpope/vim-surround'
-Bundle 'vim-ruby/vim-ruby'
-
-" vim-airline
-let g:airline_symbols = {}
-" unicode symbols
-let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
-let g:airline_symbols.linenr = '␊'
-let g:airline_symbols.linenr = '␤'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
-
-"NERDTree
+" NERDTree
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-"CtrlP
+" CtrlP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " ----------------------------------------------------------------------------
@@ -94,8 +46,7 @@ map <C-n> :NERDTreeToggle<CR>
 " Text Formatting / Color Highlighting
 " ----------------------------------------------------------------------------
 syntax enable
-let g:solarized_termtrans = 1
-colorscheme solarized
+colorscheme Tomorrow-Night
 
 set encoding=utf-8
 set expandtab

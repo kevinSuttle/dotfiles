@@ -1,0 +1,43 @@
+set nocompatible
+
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+" Define bundles via GitHub repos
+Bundle 'rking/ag.vim'
+Bundle 'vim-scripts/ctags.vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'csscomb/CSScomb-for-Vim'
+Bundle 'mattn/emmet-vim'
+Bundle 'sjl/gundo.vim'
+Bundle 'hallettj/jslint.vim'
+Bundle 'Shougo/neocomplcache.vim'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'myusuf3/numbers.vim'
+Bundle 'danro/rename.vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'godlygeek/tabular'
+Bundle 'majutsushi/tagbar'
+Bundle 'chriskempson/tomorrow-theme'
+Bundle 'bling/vim-airline'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'croaky/vim-colors-github'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'tpope/vim-fugitive'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'tsaleh/vim-matchit'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-rails'
+Bundle 'vim-ruby/vim-ruby'
+
+if filereadable(expand("~/.vimrc.bundles.local"))
+  source ~/.vimrc.bundles.local
+endif
+
+filetype on
