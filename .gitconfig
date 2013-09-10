@@ -1,13 +1,3 @@
-[user]
-	name = Kevin Suttle
-	email = kevin@kevinsuttle.com
-[github]
-	user = kevinSuttle
-[credential]
-	helper = osxkeychain
-[core]
-	editor = vim
-	excludesfile = ~/.gitignore
 [color]
 	status = true
 	branch = true
@@ -16,14 +6,26 @@
 	interactive = true
 	ui = true
 	grep = true
-[push]
-	default = simple
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+[credential]
+	helper = osxkeychain
 [diff]
 	tool = opendiff
+[github]
+	user = kevinSuttle
+[help]
+	autocorrect = 1
+[hub]
+	protocol = https
 [merge]
 	tool = opendiff
 	keepBackup = false
 [mergetool]
 	keepBackup = false
-[hub]
-	protocol = https
+[push]
+	default = simple
+[user]
+	name = Kevin Suttle
+	email = kevin@kevinsuttle.com
