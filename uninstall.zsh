@@ -14,3 +14,5 @@ rm $HOME/.gvimrc ~/.gvimrc
 rm $HOME/.vimrc.bundles ~/.vimrc.bundles
 rm $HOME/.zshrc ~/.zshrc
 rm $HOME/.vim/bundle/vundle
+
+exec $SHELL

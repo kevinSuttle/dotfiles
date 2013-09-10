@@ -1,5 +1,6 @@
 #!/bin/zsh
 source .exports
+source .aliases
 
 ln -s $DOTFILES/.hushlogin ~/.hushlogin
 ln -s $DOTFILES/.inputrc ~/.inputrc
@@ -17,3 +18,5 @@ ln -s $DOTFILES/.zshrc ~/.zshrc
 
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 vim -u ~/.vimrc.bundles +BundleInstall +qa
+
+reload
