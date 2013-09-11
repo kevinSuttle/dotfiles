@@ -1,0 +1,21 @@
+# EditorConfig is awesome: http://EditorConfig.org
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines at the bottom of every file
+[*]
+end_of_line = lf
+charset = "utf-8"
+
+# 4 space indentation (no tabs!)
+indent_style = space
+indent_size = 4
+
+# Just in case a previous file has tabs
+tab_width = 4
+
+# Make sure every file has a blank line at the end
+insert_final_newline = true
+
+# Remove any whitespace characters preceding newline characters
+trim_trailing_whitespace = true
