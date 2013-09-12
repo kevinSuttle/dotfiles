@@ -1,4 +1,8 @@
 # REQUIRES BASH 4
+for file in $PWD/.{aliases,colors,exports,functions}; do
+	[ -r "$file" ] && source "$file"
+done
+unset file
 
 # Enable some Bash 4 features when possible:
 # * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
@@ -6,7 +10,6 @@
 for option in autocd globstar; do
 	shopt -s "$option" 2> /dev/null
 done
-
 
 # Make 'cd' more forgiving http://blog.sanctum.geek.nz/smarter-directory-navigation/
 shopt -s cdspell
@@ -34,14 +37,13 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
 
-
 function parse_git_dirty() {
-	[[ $(git status 2> /dev/null | tail -n1) != *"working directory clean"* ]] && echo "*"
+    [[ $(git status 2> /dev/null | tail -n1) != *"working directory clean"* ]] && echo "$RESET*"
 }
 
 function parse_git_branch() {
-	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
+    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
 }
 
-export PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]at \[$ORANGE\]\h \[$WHITE\]in \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]\n\$ \[$RESET\]"
-export PS2="\[$ORANGE\]→ \[$RESET\]"
+export PS1="\[$CYAN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \"$WHITE\]\[$RESET\] on branch \")\[$CYAN\]\$(parse_git_branch)\[$RESET\] \T\n\$ "
+export PS2="\[$ORANGE\]$ \[$RESET\]"
