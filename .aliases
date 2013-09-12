@@ -122,6 +122,7 @@ alias grt='git reset'
 alias gsmu='git submodule update --init --recursive'
 alias gsmp='git submodule foreach git pull origin master'
 alias gphm='git push heroku master'
+alias ghw="git help --web"
 
 # Extra
 alias ho='heroku open'
