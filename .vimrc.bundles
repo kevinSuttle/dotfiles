@@ -1,44 +1,32 @@
-set nocompatible
-
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" Let Vundle manage Vundle
-Bundle 'gmarik/vundle'
-
 " Define bundles via GitHub repos
-Bundle 'rking/ag.vim'
-Bundle 'vim-scripts/ctags.vim'
-Bundle 'kien/ctrlp.vim'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'bling/vim-airline'
+Bundle 'chriskempson/tomorrow-theme'
+Bundle 'croaky/vim-colors-github'
 Bundle 'csscomb/CSScomb-for-Vim'
-Bundle 'mattn/emmet-vim'
+Bundle 'danro/rename.vim'
 Bundle 'editorconfig/editorconfig-vim'
-Bundle 'sjl/gundo.vim'
+Bundle 'godlygeek/tabular'
 Bundle 'hallettj/jslint.vim'
-Bundle 'Shougo/neocomplcache.vim'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'kien/ctrlp.vim'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'majutsushi/tagbar'
+Bundle 'mattn/emmet-vim'
+Bundle 'myusuf3/numbers.vim'
+Bundle 'rking/ag.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
-Bundle 'myusuf3/numbers.vim'
-Bundle 'danro/rename.vim'
 Bundle 'scrooloose/syntastic'
-Bundle 'godlygeek/tabular'
-Bundle 'majutsushi/tagbar'
-Bundle 'chriskempson/tomorrow-theme'
-Bundle 'bling/vim-airline'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'croaky/vim-colors-github'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'Lokaltog/vim-easymotion'
+Bundle 'Shougo/neocomplcache.vim'
+Bundle 'sjl/gundo.vim'
+Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-fugitive'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'tsaleh/vim-matchit'
-Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-surround'
+Bundle 'tsaleh/vim-matchit'
 Bundle 'vim-ruby/vim-ruby'
-
-if filereadable(expand("~/.vimrc.bundles.local"))
-  source ~/.vimrc.bundles.local
-endif
-
-filetype on
+Bundle 'vim-scripts/Align'
+Bundle 'vim-scripts/ctags.vim'
+Bundle 'vim-scripts/matchit.zip'
