@@ -1,4 +1,12 @@
-# List hidden
+# GRC Colorization
+alias colorize="grc -es --colour=auto"
+alias configure='colorize ./configure'
+alias diff='colorize diff'
+alias make='colorize make'
+alias gcc='colorize gcc'
+alias curl='colorize curl'
+
+# List files, including hidden ones
 alias ls='ls -aF'
 
 # List only directories
@@ -10,32 +18,16 @@ alias cddf='cd $DOTFILES'
 alias cdc='cd ~/Code/'
 alias cdd='cd ~/Downloads/'
 alias cds='cd ~/Code/kevinsuttle.github.io'
-alias mkdir='mkdir -p'
+alias mkdir='mkdir -p && cd $_'
 
-# Shortcuts
+# Application Shortcuts
 alias v='vim'
 alias gvim='/opt/homebrew-cask/Caskroom/macvim/7.4-70/MacVim-snapshot-70/MacVim.app/Contents/MacOS/Vim -g'
 alias mvim='/opt/homebrew-cask/Caskroom/macvim/7.4-70/MacVim-snapshot-70/MacVim.app/Contents/MacOS/Vim -vf'
 
 # Commands
 alias jsw='jekyll serve --watch'
-alias reload='source ~/.zshrc'
-
-# Detect which `ls` flavor is in use
-if ls --color > /dev/null 2>&1; then # GNU `ls`
-	colorflag="--color"
-else # OS X `ls`
-	colorflag="-G"
-fi
-
-# Gzip-enabled `curl`
-alias gurl='curl --compressed'
-
-# Stopwatch
-alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
-
-# Trim new lines and copy to clipboard
-alias c="tr -d '\n' | pbcopy"
+alias reload='. ~/.zshrc'
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 # Thanks once again @MathiasBynens
@@ -58,13 +50,13 @@ alias CLEAN_HOUSE='flush; lscleanup; removeDS; emptytrash'
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; cleanup; lscleanup; flush;"
 
 # Show/hide hidden files in Finder
-alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+alias shf="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hhf="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
 # Disable Spotlight
-alias spotoff="sudo mdutil -a -i off"
+alias spotlightoff="sudo mdutil -a -i off"
 # Enable Spotlight
-alias spoton="sudo mdutil -a -i on"
+alias spotlighton="sudo mdutil -a -i on"
 
 # Ring the terminal bell, and put a badge on Terminal.app’s Dock icon
 # (useful when executing time-consuming commands)
@@ -73,6 +65,9 @@ alias badge="tput bel"
 # Kill all the tabs in Chrome to free up memory
 # [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
+
+# See all open and running ports
+alias runningports="lsof -i -n | egrep 'COMMAND|LISTEN'"
 
 # Wrap git with hub
 if [[ -f `command -v hub` ]] ; then alias git=hub ; fi
@@ -89,7 +84,7 @@ alias gf='git fetch'
 alias catchup='gf origin master && grp origin/master'
 alias gpr='git pull --rebase'
 alias gprom='git pull --rebase origin master'
-alias gpum='git pull --rebase upstream master'
+alias gprum='git pull --rebase upstream master'
 alias gpom='git push origin master'
 alias grao='git remote add origin'
 alias grau='git remote add upstream'
