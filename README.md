@@ -24,7 +24,7 @@ This minimalistic approach was put forth by [@SStephenson](http://github.com/sst
 ## Setup
 1. Open up your terminal of choice.
 2. Run ```source install.sh```
-	- If you have existing files, they will **not** be overwritten. You can uninstall them if you want, using `uninstall.sh', BUT see the disclaimer below.
+	- If you have existing files, they will **not** be overwritten. You can uninstall them if you want, using `uninstall.sh`, BUT see the disclaimer below.
 3. Enjoy.
 
 ## Teardown + Disclaimer
