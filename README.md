@@ -1,25 +1,41 @@
-#~/.dotfiles
+# ~/.dotfile
 
 
-I present my humble list of dotfiles. If you haven't experienced the freedom that comes from versioning your dotfiles, check out Github's dedicated [dotfile page](http://dotfiles.github.com).
+I present my humble dotfile. That's not a typo. It's one file—a single `.bashrc`[*](#footnote).  
+Here come the questions. I can *feel* them.
 
-Big thanks to [@holman](http://twitter.com/holman) for the [inspiration](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/),
-to [@mathias](http://twitter.com/mathias) for his [legendary collection](https://github.com/mathiasbynens/dotfiles/blob/master/.osx) of OSX dotfiles,
-to [@pengwynn](http://twitter.com/pengwynn) for his [dotfile](http://wynnnetherland.com/journal/dotfiles-discovery) [creativity](http://wynnnetherland.com/journal/dotfiles-discovery) and to
-[@tyrmored](http://twitter.com/tyrmored) for the [implemenation details](http://blog.sanctum.geek.nz/managing-dot-files-with-git/).
+> 1. Why just one `.bashrc` file?
+2. Why `bash/sh`?
+3. What about your customizations?
 
-##About
-This is my personal setup that I use everyday. It's centered on Zsh, Vim, and Ruby.
+Here are my answers, in order.  
+
+1. It's liberating to only have a single file to manage, especially when there's not much to its contents.  
+
+2. `bash/sh` are universal and shipped as the default shells in all UNIX-based operating systems. In other words, I don't have to install anything.
 
 
-###Setup
+3. Again, it's very refreshing to learn how to use the tools and their defaults, without relying on custom configurations. By following this philosophy, you can sit down at any UNIX machine and **instantly** know how to do, and where to find anything. No time wasted setting up environments, dotfiles, shells, editors, or anything else that doesn't get installed with your operating system.  
+
+## Philosophy
+This minimalistic approach was put forth by @SStephenson, in [this post](http://sstephenson.us/posts/on-configuration), which is highly reccomended. Thanks @JordanThomas for the reminder.
+
+## Setup
 1. Open up your terminal of choice.
-2. Run ```source install.zsh```
-	- If you have existing files, they will **not** be overwritten.
+2. Run ```source install.sh```
+	- If you have existing files, they will **not** be overwritten. You can uninstall them if you want, using `uninstall.sh', BUT see the disclaimer below.
 3. Enjoy.
 
-###Teardown
+## Teardown + Disclaimer
 1. Open up your terminal of choice.
-2. Run ```source uninstall.zsh```
-	- Existing files **will** be removed.
+2. READ `uninstall.sh`
+3. THINK about `uninstall.sh` and what it'll actually do to your system
+4. Sleep on it
+5. Read `uninstall.sh` again and realize that what I'm doing here is warning you that your files **will be wiped** and I'm in no way responsible for your devil-may-care recklessness.
+6. When you're ready, and have legally signed a waiver and faxed it to my pager,  
+run ```source uninstall.zsh```
+	- Again, existing files **will** be removed.
+    - Enjoy?
 	
+## footnote
+**Ok, fine, it's technically 2 if you count the .gitignore, but come on, I'm trying to do a thing here.* 
