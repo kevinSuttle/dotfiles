@@ -1,20 +1,20 @@
 #!/bin/zsh
-source .exports
 source .aliases
 
-ln -s $DOTFILES/.hushlogin ~/.hushlogin
-ln -s $DOTFILES/.inputrc ~/.inputrc
-ln -s $DOTFILES/.screenrc ~/.screenrc
-ln -s $DOTFILES/.bash_profile ~/.bash_profile
-ln -s $DOTFILES/.gitconfig ~/.gitconfig
-ln -s $DOTFILES/.gitignore ~/.gitignore
-ln -s $DOTFILES/.tmux.conf ~/.tmux.conf
-ln -s $DOTFILES/.gemrc ~/.gemrc
-ln -s $DOTFILES/default-gems ~/.rbenv/default-gems
-ln -s $DOTFILES/.vimrc ~/.vimrc
-ln -s $DOTFILES/.gvimrc ~/.gvimrc
-ln -s $DOTFILES/.vimrc.bundles ~/.vimrc.bundles
-ln -s $DOTFILES/.zshrc ~/.zshrc
+ln -s $PWD/.hushlogin $HOME/.hushlogin
+ln -s $PWD/.inputrc $HOME/.inputrc
+ln -s $PWD/.screenrc $HOME/.screenrc
+ln -s $PWD/.bash_profile $HOME/.bashrc
+ln -s $PWD/.bash_profile $HOME/.bash_profile
+ln -s $PWD/.gitconfig $HOME/.gitconfig
+ln -s $PWD/.gitignore $HOME/.gitignore
+ln -s $PWD/.tmux.conf $HOME/.tmux.conf
+ln -s $PWD/.gemrc $HOME/.gemrc
+ln -s $PWD/default-gems $HOME/.rbenv/default-gems
+ln -s $PWD/.vimrc $HOME/.vimrc
+ln -s $PWD/.vimrc.bundles $HOME/.vimrc.bundles
+ln -s $PWD/.gvimrc $HOME/.gvimrc
+ln -s $PWD/.zshrc $HOME/.zshrc
 
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 vim -u ~/.vimrc.bundles +BundleInstall +qa

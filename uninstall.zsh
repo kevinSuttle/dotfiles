@@ -1,18 +1,18 @@
 #!/bin/zsh
 
+rm $HOME/.bash*
+rm $HOME/.curlrc
+rm $HOME/.rbenv/default-gems
+rm $HOME/.gemrc
+rm $HOME/.git*
+rm $HOME/.gvim*
+rm $HOME/.hg*
 rm $HOME/.hushlogin
-rm $HOME/.inputrc ~/.inputrc
-rm $HOME/.screenrc ~/.screenrc
-rm $HOME/.bash_profile ~/.bash_profile
-rm $HOME/.gitconfig ~/.gitconfig
-rm $HOME/.gitignore ~/.gitignore
-rm $HOME/.tmux.conf ~/.tmux.conf
-rm $HOME/.gemrc ~/.gemrc
-rm $HOME/default-gems ~/.rbenv/default-gems
-rm $HOME/.vimrc ~/.vimrc
-rm $HOME/.gvimrc ~/.gvimrc
-rm $HOME/.vimrc.bundles ~/.vimrc.bundles
-rm $HOME/.zshrc ~/.zshrc
-rm $HOME/.vim/bundle/vundle
+rm $HOME/.inputrc
+rm $HOME/.netrc
+rm $HOME/.screenrc
+rm $HOME/.tmux*
+rm $HOME/.z*
+rm -d $HOME/.vim*
 
 exec $SHELL
