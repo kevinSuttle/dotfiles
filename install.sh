@@ -1,3 +1,3 @@
 #!/bin/sh
 
-ln -sf $PWD/.bashrc ~/.bashrc
+ln -s $PWD/.bashrc ~/.bashrc
