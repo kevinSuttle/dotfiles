@@ -1,6 +1,5 @@
 #~/.dotfiles
 
-
 I present my humble list of dotfiles. If you haven't experienced the freedom that comes from versioning your dotfiles, check out Github's dedicated [dotfile page](http://dotfiles.github.com).
 
 Big thanks to [@holman](http://twitter.com/holman) for the [inspiration](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/),
@@ -21,5 +20,4 @@ This is my personal setup that I use everyday. It's centered on Zsh, Vim, and Ru
 ###Teardown
 1. Open up your terminal of choice.
 2. Run ```source uninstall.zsh```
-	- Existing files **will** be removed.
-	
+    - Existing files **will** be removed.
