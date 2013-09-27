@@ -19,7 +19,7 @@ Here are my answers, in order.
 4. That is a very good question. My intention is that you may like the setup and want to build on it or fork it. It's meant as a starting point, or a model to mimic. You could also completely ignore this branch, and repo for that matter, not ever having any dotfiles that you've manually created. Your call. 
 
 ## Philosophy
-This minimalistic approach was put forth by @SStephenson, in [this post](http://sstephenson.us/posts/on-configuration), which is highly reccomended. Thanks @JordanThomas for the reminder.
+This minimalistic approach was put forth by [@SStephenson](http://github.com/sstephenson), in [this post](http://sstephenson.us/posts/on-configuration), which is highly reccomended. Thanks [@JordanThomas](https://github.com/JordanThomas) for the reminder.
 
 ## Setup
 1. Open up your terminal of choice.
