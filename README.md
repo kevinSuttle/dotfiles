@@ -1,6 +1,6 @@
 # ~/.dotfile
 
-I present my humble dotfile. That's not a typo. It's one file—a single `.bashrc`[*](#footnote).  
+I present my humble dotfile. That's not a typo. It's one file—a single `.bashrc`.  
 Here come the questions. I can *feel* them.
 
 > 1. Why just one `.bashrc` file?
@@ -37,6 +37,3 @@ This minimalistic approach was put forth by [@SStephenson](http://github.com/sst
 run ```source uninstall.zsh```
 	- Again, existing files **will** be removed.
     - Enjoy?
-	
-## footnote
-* *Ok, fine, it's technically 2 if you count the .gitignore, but come on, I'm trying to do a thing here.* 
