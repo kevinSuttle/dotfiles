@@ -1,0 +1,36 @@
+# Editor prefs
+export EDITOR=vim
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# keep TONS of history
+export HISTSIZE=4096
+
+# Highlight section titles in manual pages
+export LESS_TERMCAP_md="$ORANGE"
+
+# Don’t clear the screen after quitting a manual page
+export MANPAGER="less -X"
+
+# RBEnv
+export PATH="$HOME/.rbenv/bin:$PATH"
+
+# Homebrew
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/bin:$PATH"
+
+# Homebrew cask
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+# Custom Executables: e.g. 'subl'
+export PATH="$HOME/.bin:$PATH"
+
+# Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# NPM
+export PATH="/usr/local/share/npm/bin:$PATH"
+
+# Node
+export NODE_PATH="/usr/local/bin/node"

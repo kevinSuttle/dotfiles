@@ -1,0 +1,69 @@
+# Wrap git with hub
+if [[ -f `command -v hub` ]] ; then alias git=hub ; fi
+
+# Git aliases, because who wants to type 'git' every time?
+alias ga="git add"
+alias gb= 'git branch --verbose'
+alias gc='git commit --verbose'
+alias gca='git commit --amend'
+alias gcl='git clone --single-branch --verbose'
+alias gco= 'git checkout'
+alias gd='git diff'
+alias gf='git fetch --prune'
+alias gh='git help'
+alias gl='git log --graph --pretty=format:"%C(cyan)%h%C(red)%d %C(yellow)%ar%C(white) %s %C(black)- %an"'
+alias log='git log --graph --pretty=format:"%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset" --abbrev-commit --date=relative'
+alias gm='git merge --no-ff'
+alias gp='git push'
+alias gpl='git pull  --prune'
+alias gplr='git pull --rebase --prune'
+alias grb='git rebase --preserve-merges'
+alias grv='git remote --verbose'
+alias gs='git status --short --branch'
+alias gt='git git tag'
+alias gu='git reset' # Think "un-stage"
+
+# Extra
+alias be="bundle exec"
+alias gi="gem install"
+alias rbenvdoctor="curl -s https://gist.github.com/mislav/4728286/raw/rbenv-doctor.sh | bash -x 2>&1"
+
+# List files, including hidden ones
+alias l="ls -aF"
+
+# Easier navigation: Thanks @mathiasbynens, @gf3, et al.
+alias ..="cd .."
+alias cddf="cd $DOTFILES"
+alias cdc="cd ~/Code/"
+alias cds="cd ~/Code/kevinsuttle.github.io"
+alias mkcd="mkdir -p && cd $_"
+
+# Application Shortcuts
+alias v="vim"
+
+# Commands
+alias jsw="jekyll serve --watch"
+alias r=". ~/.zshrc" # Reloads the shell
+
+# Update and tidy up Homebrew
+alias update_brew="brew update && brew upgrade && brew cleanup && brew prune"
+
+# Get OS X Software Updates, update installed Ruby gems and Homebrew formulae
+alias UPDATE_SYSTEM="sudo softwareupdate -i -a; update_brew; sudo gem update"
+alias update_npm="npm update npm -g; npm update -g;"
+
+# Flush Directory Service cache
+alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
+
+# Clean up LaunchServices to remove duplicates in the “Open With” menu
+alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
+
+# Recursively delete `.DS_Store` files
+alias removeDS="find . -type f -name '*.DS_Store' -ls -delete"
+
+# Empty the Trash on all mounted volumes and the main HDD
+# Also, clear Apple’s System Logs to improve shell startup speed
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; cleanup; lscleanup; flush;"
+
+# MASSIVE CLEANUP
+alias CLEAN_HOUSE="flush; lscleanup; removeDS; emptytrash"
