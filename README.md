@@ -1,6 +1,23 @@
-#~/.dotfiles
+# ~/.dotfiles
 
-## Choose your path
-I've actually designed this repo to have two paths: the Red Pill and Blue Pill, if you will. Choose the Red Pill, or this branch that I've called [mnml](https://github.com/kevinSuttle/dotfiles/tree/mnml), and you take the nomadic, default-loving route. 
 
-Choose the Blue Pill, the [full](https://github.com/kevinSuttle/dotfiles/tree/full) branch until I come up with a more interesting name, and you get a full custom setup with Zsh, Vim, and Ruby.
+## Overview
+This dotfile setup is for an efficient Zsh, Ruby, and Vim-oriented work environment.
+
+## Installation
+1. Open up your terminal of choice.
+2. Run ```source install.zsh```
+	- If you have existing files, they **will** be overwritten.
+3. Enjoy.
+
+## Removal
+1. Open up your terminal of choice.
+3. Run ```source uninstall.zsh```
+	- Again, existing files **will** be removed.
+   - Enjoy?
+
+## Disclaimer
+You should read both of these files before running them.
+
+## Contributing
+Pull requests are very welcome. Fork away!
