@@ -1,5 +1,6 @@
 export DOTFILES="$HOME/Code/dotfiles"
-for file in $DOTFILES/{aliases,exports,colors,functions,initrbenv}; do
+
+for file in $DOTFILES/{aliases,colors,exports,functions,initrbenv}; do
     [ -r "$file" ] && source "$file"
 done
 unset file

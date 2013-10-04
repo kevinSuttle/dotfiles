@@ -8,22 +8,21 @@ function mkcd() {
     mkdir -p "$@" && cd "$@"
 }
 
-
 # Use Git’s colored diff when available
 hash git &>/dev/null
 if [ $? -eq 0 ]; then
-	function diff() {
-		git diff --no-index --color-words "$@"
-	}
+    function diff() {
+        git diff --no-index --color-words "$@"
+    }
 fi
 
 # Create a git.io short URL
 function gitio() {
-	if [ -z "${1}" -o -z "${2}" ]; then
-		echo "Usage: \`gitio slug url\`"
-		return 1
-	fi
-	curl -i http://git.io/ -F "url=${2}" -F "code=${1}"
+    if [ -z "${1}" -o -z "${2}" ]; then
+        echo "Usage: \`gitio slug url\`"
+        return 1
+    fi
+    curl -i http://git.io/ -F "url=${2}" -F "code=${1}"
 }
 
 function git_current_branch() {

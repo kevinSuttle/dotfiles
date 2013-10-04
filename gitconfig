@@ -28,7 +28,7 @@
 [push]
     default = simple
 [user]
-	email = kevin@kevinsuttle.com
-	name = Kevin Suttle
+    email = kevin@kevinsuttle.com
+    name = Kevin Suttle
 [mergetool]
-	keepBackup = false
+    keepBackup = false
