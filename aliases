@@ -41,11 +41,11 @@ alias jsw="jekyll serve --watch"
 alias r=". ~/.zshrc" # Reloads the shell
 
 # Get OS X Software Updates, update installed Ruby gems, Node/NPM and Homebrew formulae
-alias update_brew="brew update && brew upgrade && brew cleanup && brew prune"
+alias update_brew="brew update && brew upgrade; brew cleanup; brew prune;"
 alias update_node="npm update npm -g; npm update -g;"
-alias update_osx="sudo softwareupdate -i -a"
-alias update_ruby="brew upgrade rbenv ruby-build && gem update --system"
-alias update_system="update_osx; update_ruby; update_brew; update_node;"
+alias update_osx="sudo softwareupdate -i -a;"
+alias update_ruby="brew upgrade rbenv ruby-build; sudo gem update --system --verbose --no-document;"
+alias update_system="update_osx update_ruby update_brew update_node"
 
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
