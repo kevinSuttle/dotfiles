@@ -24,11 +24,6 @@ alias gt="git git tag"
 alias gu="git reset"
 # Think "un-stage"
 
-# Extra
-alias be="bundle exec"
-alias gi="gem install"
-alias rbenvdoctor="curl -s https://gist.github.com/mislav/4728286/raw/rbenv-doctor.sh | bash -x 2>&1"
-
 # List files, including hidden ones
 alias l="ls -aF"
 
