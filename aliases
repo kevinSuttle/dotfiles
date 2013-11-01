@@ -20,8 +20,8 @@ alias gplr="git pull --rebase --prune"
 alias grb="git rebase --preserve-merges"
 alias grv="git remote --verbose"
 alias gs="git status --short --branch"
-alias gt="git git tag"
-alias gu="git reset" # Think "un-stage"
+alias gt="git tag"
+alias gu="git reset --soft 'HEAD^'" # Think "un-stage"
 
 # List files, including hidden ones
 alias l="ls -aF"
