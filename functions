@@ -3,11 +3,6 @@ function cdf() { # short for `cdfinder`
     cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')"
 }
 
-# Create a new directory and enter it
-function mkcd() {
-    mkdir -p "$@" && cd "$@"
-}
-
 # Use Git’s colored diff when available
 hash git &>/dev/null
 if [ $? -eq 0 ]; then
