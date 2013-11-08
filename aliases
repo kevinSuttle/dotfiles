@@ -39,6 +39,7 @@ alias v="vim"
 # Commands
 alias jsw="jekyll serve --watch"
 alias r=". ~/.zshrc" # Reloads the shell
+alias jsc="/System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Resources/jsc"
 
 # Get OS X Software Updates, update installed Ruby gems, Node/NPM and Homebrew formulae
 alias update_brew="brew update && brew upgrade; brew cleanup; brew prune;"
