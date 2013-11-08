@@ -44,7 +44,7 @@ alias r=". ~/.zshrc" # Reloads the shell
 alias update_brew="brew update && brew upgrade; brew cleanup; brew prune;"
 alias update_node="npm update npm -g; npm update -g;"
 alias update_osx="sudo softwareupdate -i -a;"
-alias update_ruby="brew upgrade rbenv ruby-build; sudo gem update --system --verbose --no-document;"
+alias update_ruby="brew upgrade rbenv ruby-build; gem update --system --verbose --no-document; gem update --no-document;"
 alias update_system="update_osx update_ruby update_brew update_node"
 
 # Flush Directory Service cache
