@@ -1,6 +1,12 @@
+# use .localrc for stuff that you don't want in your public, versioned repo.
+if [[ -a ~/.localrc ]]
+then
+  source ~/.localrc
+fi
+
 export DOTFILES="$HOME/Code/dotfiles"
 
-for file in $DOTFILES/{aliases,colors,exports,functions,initrbenv}; do
+for file in $DOTFILES/{aliases,colors,exports,functions}; do
     [ -r "$file" ] && source "$file"
 done
 unset file

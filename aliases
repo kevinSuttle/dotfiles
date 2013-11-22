@@ -16,9 +16,8 @@ alias log="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(
 alias gm="git merge --no-ff"
 alias gp="git push"
 alias gpl="git pull  --prune"
-alias gplr="git pull --rebase --prune"
-alias grb="git rebase --preserve-merges"
-alias grv="git remote --verbose"
+alias gplr="git pull --prune"
+alias gr="git remote --verbose"
 alias gs="git status --short --branch"
 alias gt="git tag"
 alias gu="git reset --soft 'HEAD^'" # Think "un-stage"
@@ -27,6 +26,7 @@ alias gu="git reset --soft 'HEAD^'" # Think "un-stage"
 alias l="ls -aF"
 
 # Easier navigation: Thanks @mathiasbynens, @gf3, et al.
+alias c="cd"
 alias ..="cd .."
 alias cddf="cd $DOTFILES"
 alias cdc="cd ~/Code/"
@@ -38,8 +38,12 @@ alias v="vim"
 
 # Commands
 alias jsw="jekyll serve --watch"
-alias r=". ~/.zshrc" # Reloads the shell
+alias z=". ~/.zshrc" # Reloads the shell
 alias jsc="/System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Resources/jsc"
+alias r="rake"
+
+# Add a spacer to the left side of the Dock (where the applications are)
+alias addspace="defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}' && killall Dock"
 
 # Get OS X Software Updates, update installed Ruby gems, Node/NPM and Homebrew formulae
 alias update_brew="brew update && brew upgrade; brew cleanup; brew prune;"

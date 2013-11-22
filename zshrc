@@ -1,6 +1,13 @@
+# use .localrc for stuff that you don't want in your public, versioned repo.
+if [[ -a ~/.localrc ]]
+then
+  source ~/.localrc
+fi
+
 export DOTFILES="$HOME/Code/dotfiles"
 
-for config_file ($DOTFILES/{aliases,colors,exports,functions,initrbenv}) source $config_file
+for config_file ($DOTFILES/{aliases,colors,exports,functions}) source $config_file
+
 
 # Completions
 autoload -U promptinit
@@ -102,3 +109,6 @@ bindkey '^?' backward-delete-char
 
 # Source Pure.zsh
 source ~/Code/pure/pure.zsh
+
+# added by travis gem
+source /Users/ksuttle/.travis/travis.sh
