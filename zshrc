@@ -112,5 +112,8 @@ eval "$(rbenv init -)"
 
 
 # Source Pure.zsh
-source ~/Code/pure/pure.zsh
+if [[ -a ~/Code/pure/pure.zsh ]]
+then
+  source ~/Code/pure/pure.zsh
+fi
 
