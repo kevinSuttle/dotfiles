@@ -23,7 +23,7 @@ alias gt="git tag"
 alias gu="git reset --soft 'HEAD^'" # Think "un-stage"
 
 # List files, including hidden ones
-alias l="ls -aF"
+alias l="ls -1pAFG”
 
 # Easier navigation: Thanks @mathiasbynens, @gf3, et al.
 alias c="cd"
