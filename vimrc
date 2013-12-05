@@ -10,6 +10,8 @@ if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
 
+Bundle 'gmarik/vundle'
+
 filetype plugin indent on
 
 colorscheme Tomorrow-Night-Eighties
