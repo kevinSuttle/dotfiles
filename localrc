@@ -1,5 +1,0 @@
-# added by travis gem
-source /Users/ksuttle/.travis/travis.sh
-
-# Load RBenv
-eval "$(rbenv init -)"
