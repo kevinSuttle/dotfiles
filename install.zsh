@@ -1,3 +1,4 @@
+git clone https://github.com/kevinSuttle/dotfiles.git ~/Code/dotfiles
 export DOTFILES="$HOME/Code/dotfiles"
 
 ln -sf $DOTFILES/bashrc $HOME/.bashrc
