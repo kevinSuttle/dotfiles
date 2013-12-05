@@ -114,5 +114,3 @@ eval "$(rbenv init -)"
 # Source Pure.zsh
 source ~/Code/pure/pure.zsh
 
-# added by travis gem
-source /Users/ksuttle/.travis/travis.sh
