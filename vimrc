@@ -14,7 +14,9 @@ Bundle 'gmarik/vundle'
 
 filetype plugin indent on
 
-colorscheme Tomorrow-Night-Eighties
+if filereadable(expand("~/.vim/bundle/vim-tomorrow-theme/colors/Tomorrow-Night-Eighties.vim"))
+  colorscheme Tomorrow-Night-Eighties
+endif
 
 inoremap jk <ESC>
 map <C-n> :NERDTreeToggle<CR>
