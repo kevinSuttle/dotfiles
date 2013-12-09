@@ -1,13 +1,6 @@
-# use .localrc for stuff that you don't want in your public, versioned repo.
-if [[ -a ~/.localrc ]]
-then
-  source ~/.localrc
-fi
-
 export DOTFILES="$HOME/Code/dotfiles"
 
 for config_file ($DOTFILES/{aliases,colors,exports,functions}) source $config_file
-
 
 # Completions
 autoload -U promptinit
@@ -116,4 +109,3 @@ if [[ -a ~/Code/pure/pure.zsh ]]
 then
   source ~/Code/pure/pure.zsh
 fi
-
