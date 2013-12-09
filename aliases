@@ -35,6 +35,7 @@ alias mkcd="mkdir -p && cd $_"
 
 # Application Shortcuts
 alias v="vim"
+alias mvim='/usr/local/Cellar/macvim/7.4-72/bin/mvim'
 
 # Commands
 alias jsw="jekyll serve --watch"
