@@ -16,9 +16,9 @@ export MANPAGER="less -X"
 export PATH="$HOME/.rbenv/bin:$PATH"
 
 # Homebrew
+export PATH="/usr/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/bin:$PATH"
 
 # Homebrew cask
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
