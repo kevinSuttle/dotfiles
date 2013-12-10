@@ -66,6 +66,7 @@ syntax enable
 " NERDTree
 " ---------------------------------------------------------------------------
 let g:NERDTreeShowHidden=1
+let NERDTreeIgnore = ['\.swp$', '\.DS_Store$']
 map <C-n> :NERDTreeToggle<CR>
 
 " ---------------------------------------------------------------------------
