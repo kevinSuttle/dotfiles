@@ -1,6 +1,7 @@
 export DOTFILES="$HOME/Code/dotfiles"
 
 for config_file ($DOTFILES/{aliases,colors,exports,functions}) source $config_file
+fpath=( "/usr/local/share/zsh/site-functions/" $fpath )
 
 # add some readline keys back
 bindkey "^A" beginning-of-line
