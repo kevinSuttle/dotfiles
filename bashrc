@@ -5,4 +5,4 @@ for file in $DOTFILES/{aliases,colors,exports,functions}; do
 done
 unset file
 
-export PS1="\w \$(parse_git_branch) \@\n$ "
+export PS1="\w \$(parse_git_branch) \n$ "
