@@ -5,18 +5,16 @@ if [[ -f `command -v hub` ]] ; then alias git=hub ; fi
 alias ga="git add"
 alias gb="git branch --verbose"
 alias gc="git commit --verbose"
-alias gca="git commit --amend"
 alias gcl="git clone --single-branch --verbose"
 alias gco="git checkout"
 alias gd="git diff"
 alias gf="git fetch --prune --all"
 alias gh="git help"
 alias gl="git log --graph --pretty=format:'%C(cyan)%h%C(red)%d %C(yellow)%ar%C(white) %s %C(black)- %an'"
-alias log="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias gm="git merge --no-ff"
 alias gp="git push"
 alias gpl="git pull  --prune"
-alias gplr="git pull --prune"
+alias gplr="git pull --rebase"
 alias gr="git remote --verbose"
 alias gs="git status --short --branch"
 alias gt="git tag"
@@ -30,6 +28,7 @@ alias c="cd"
 alias ..="cd .."
 alias cddf="cd $DOTFILES"
 alias cdc="cd ~/Code/"
+alias cdl="cd ~/Code/laptop"
 alias cds="cd ~/Code/kevinsuttle.github.io"
 alias mkcd="mkdir -p && cd $_"
 
@@ -40,11 +39,8 @@ alias mvim='/usr/local/Cellar/macvim/7.4-72/bin/mvim'
 # Commands
 alias jsw="jekyll serve --watch"
 alias z=". ~/.zshrc" # Reloads the shell
-alias jsc="/System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Resources/jsc"
-alias r="rake"
-
-# Add a spacer to the left side of the Dock (where the applications are)
-alias addspace="defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}' && killall Dock"
+alias npmi="npm install"
+alias g="grunt"
 
 # Get OS X Software Updates, update installed Ruby gems, Node/NPM and Homebrew formulae
 alias update_brew="brew update && brew upgrade; brew cleanup; brew prune;"
