@@ -2,45 +2,9 @@ export DOTFILES="$HOME/Code/dotfiles"
 
 for config_file ($DOTFILES/{aliases,colors,exports,functions}) source $config_file
 
-# Completions
-autoload -U promptinit
-promptinit
-
-# Prompt Functions
-precmd() {
-    chpwd
-    PROMPT='%(?.%F{blue}.%F{red})❯%f '
-}
-
-chpwd() {
-    # Set Terminal title to current directory dynamically
-    print -Pn "\e]0; %~\a"
-}
-
-fpath=(/usr/local/share/zsh-completions $fpath)
-
-# Vi editing
-set -o vi
-bindkey -v
-
-# vi style incremental search
-bindkey '^R' history-incremental-search-backward
-bindkey '^S' history-incremental-search-forward
-bindkey '^P' history-search-backward
-bindkey '^N' history-search-forward
-
 # add some readline keys back
 bindkey "^A" beginning-of-line
 bindkey "^E" end-of-line
-
-# handy keybindings
-bindkey "^P" history-search-backward
-bindkey "^Y" accept-and-hold
-bindkey "^N" insert-last-word
-bindkey -s "^T" "^[Isudo ^[A" # "t" for "toughguy"
-
-# expand functions in the prompt
-setopt prompt_subst
 
 # ignore duplicate history entries
 setopt histignoredups
@@ -63,7 +27,6 @@ setopt CORRECT CORRECT_ALL
 setopt EXTENDED_GLOB
 
 # Originally taken from @holman: https://github.com/holman/dotfiles/blob/master/zsh/config.zsh
-
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
@@ -86,26 +49,30 @@ setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share 
 setopt HIST_IGNORE_ALL_DUPS  # don't record dupes in history
 setopt HIST_REDUCE_BLANKS
 
+zle -N newtab
+
+# expand functions in the prompt
+setopt prompt_subst
+
 # don't expand aliases _before_ completion has finished
 #   like: git comm-[tab]
 setopt complete_aliases
 
-zle -N newtab
+# Completions
+autoload -U promptinit
+promptinit
 
-bindkey '^[^[[D' backward-word
-bindkey '^[^[[C' forward-word
-bindkey '^[[5D' beginning-of-line
-bindkey '^[[5C' end-of-line
-bindkey '^[[3~' delete-char
-bindkey '^[^N' newtab
-bindkey '^?' backward-delete-char
+# Prompt Functions
+precmd() {
+    chpwd
+    PROMPT='%(?.%F{blue}.%F{red})❯%f '
+}
+
+chpwd() {
+    # Set Terminal title to current directory dynamically
+    print -Pn "\e]0; %~\a"
+}
+prompt pure
 
 # Load RBenv
 eval "$(rbenv init -)"
-
-
-# Source Pure.zsh
-if [[ -a ~/Code/pure/pure.zsh ]]
-then
-  source ~/Code/pure/pure.zsh
-fi
