@@ -1,6 +1,4 @@
-export DOTFILES="$HOME/Code/dotfiles"
-
-for config_file ($DOTFILES/{aliases,colors,exports,functions}) source $config_file
+for config_file ($HOME/Code/dotfiles/{aliases,colors,exports,functions}) source $config_file
 fpath=( "/usr/local/share/zsh/site-functions/" $fpath )
 
 # add some readline keys back
@@ -15,6 +13,9 @@ setopt auto_pushd
 
 # automatically enter directories without cd
 setopt auto_cd
+
+# enable color output
+autoload -U colors && colors
 
 # awesome cd movements from zshkit
 setopt AUTOCD
