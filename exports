@@ -12,19 +12,16 @@ export LESS_TERMCAP_md="$ORANGE"
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
 
-# RBEnv
-export PATH="$HOME/.rbenv/bin:$PATH"
-
 # Homebrew
 export PATH="/usr/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 
-# Homebrew cask
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-
 # Custom Executables: e.g. 'subl'
-export PATH="$HOME/.bin:$PATH"
+export PATH="$HOME/bin:$PATH"
+
+# RBEnv
+export PATH="$HOME/.rbenv/bin:$PATH"
 
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -35,3 +32,5 @@ export PATH="/usr/local/share/npm/bin:$PATH"
 # Node
 export NODE_PATH="/usr/local/bin/node"
 
+# Homebrew cask
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
