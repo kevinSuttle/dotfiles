@@ -53,6 +53,9 @@ setopt HIST_REDUCE_BLANKS
 
 zle -N newtab
 
+# Load RBenv
+eval "$(rbenv init -)"
+
 # expand functions in the prompt
 setopt prompt_subst
 
@@ -67,14 +70,10 @@ promptinit
 # Prompt Functions
 precmd() {
     chpwd
-    PROMPT='%(?.%F{blue}.%F{red})❯%f '
+    prompt pure
 }
 
 chpwd() {
     # Set Terminal title to current directory dynamically
     print -Pn "\e]0; %~\a"
 }
-prompt pure
-
-# Load RBenv
-eval "$(rbenv init -)"
