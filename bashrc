@@ -3,7 +3,7 @@ for file in $HOME/Code/dotfiles/{aliases,colors,exports,functions}; do
 done
 unset file
 
-export PS1="\[$PURPLE\]\w\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" \")\[$GRAY\]\$(parse_git_branch)\[$PURPLE\]\n\$ \[$RESET\]"
+export PS1="\[$BLUE\]\w\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" \")\[$GRAY\]\$(parse_git_branch)\[$MAGENTA\]\n\$ \[$RESET\]"
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob

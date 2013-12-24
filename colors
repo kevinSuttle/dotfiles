@@ -14,19 +14,21 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 if tput setaf 1 &> /dev/null; then
   tput sgr0
   if [[ $(tput colors) -ge 256 ]] 2>/dev/null; then
-    MAGENTA=$(tput setaf 244)
-    ORANGE=$(tput setaf 172)
+    MAGENTA=$(tput setaf 5)
+    ORANGE=$(tput setaf 208)
     GREEN=$(tput setaf 190)
     PURPLE=$(tput setaf 141)
     WHITE=$(tput setaf 15)
     GRAY=$(tput setaf 242)
+    BLUE=$(tput setaf 4)
   else
-    MAGENTA=$(tput setaf 5)
-    ORANGE=$(tput setaf 4)
+    MAGENTA=$(tput setaf 213)
+    ORANGE=$(tput setaf 172)
     GREEN=$(tput setaf 2)
     PURPLE=$(tput setaf 1)
     WHITE=$(tput setaf 255)
     GRAY=$(tput setaf 8)
+    BLUE=$(tput setaf 33)
   fi
   BOLD=$(tput bold)
   RESET=$(tput sgr0)
@@ -38,6 +40,7 @@ else
   WHITE="\033[1;37m"
   GRAY="\033[1;30m"
   BOLD=""
+  BLUE="\03[1;34;40m"
   RESET="\033[m"
 fi
 
@@ -47,11 +50,10 @@ export GREEN
 export PURPLE
 export WHITE
 export BOLD
+export BLUE
 export RESET
 
 # aliases for GRC from homebrew
 if $(grc &>/dev/null) && $(brew &>/dev/null); then
   source `brew --prefix grc`/etc/grc.bashrc
 fi
-
-
