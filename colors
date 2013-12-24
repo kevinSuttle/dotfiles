@@ -49,8 +49,9 @@ export WHITE
 export BOLD
 export RESET
 
-# GRC colorizes nifty unix tools all over the place
-if $(grc &>/dev/null) && ! $(brew &>/dev/null)
-then
-  source `brew --prefix`/etc/grc.bashrc
+# aliases for GRC from homebrew
+if $(grc &>/dev/null) && $(brew &>/dev/null); then
+  source `brew --prefix grc`/etc/grc.bashrc
 fi
+
+
