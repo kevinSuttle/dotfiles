@@ -7,12 +7,13 @@ alias gb="git branch --verbose"
 alias gc="git commit --verbose"
 alias gcl="git clone --single-branch --verbose"
 alias gco="git checkout"
+alias gcom="git checkout master"
 alias gd="git diff"
 alias gf="git fetch --prune --all"
 alias gh="git help"
 alias gl="git log --graph --pretty=format:'%C(cyan)%h%C(red)%d %C(yellow)%ar%C(white) %s %C(black)- %an'"
 alias gm="git merge --no-ff"
-alias gp="git push"
+alias gph="git push"
 alias gpl="git pull  --prune"
 alias gplr="git pull --rebase"
 alias gr="git remote --verbose"
@@ -26,8 +27,9 @@ alias ls="ls -1pAFG"
 # Easier navigation: Thanks @mathiasbynens, @gf3, et al.
 alias c="cd"
 alias ..="cd .."
-alias cddf="cd $DOTFILES"
 alias cdc="cd ~/Code/"
+alias cdd="cd ~/Downloads"
+alias cddf="cd $DOTFILES"
 alias cdl="cd ~/Code/laptop"
 alias cds="cd ~/Code/kevinsuttle.github.io"
 alias mkcd="mkdir -p && cd $_"
@@ -37,9 +39,8 @@ alias v="vim"
 alias mvim='/usr/local/Cellar/macvim/7.4-72/bin/mvim'
 
 # Commands
-alias jsw="jekyll serve --watch"
 alias z=". ~/.zshrc" # Reloads the shell
-alias npmi="npm install"
+alias ni="npm install"
 alias g="grunt"
 
 # Get OS X Software Updates, update installed Ruby gems, Node/NPM and Homebrew formulae
