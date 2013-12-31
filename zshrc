@@ -53,9 +53,6 @@ setopt HIST_REDUCE_BLANKS
 
 zle -N newtab
 
-# Load RBenv
-eval "$(rbenv init -)"
-
 # expand functions in the prompt
 setopt prompt_subst
 
@@ -77,3 +74,9 @@ chpwd() {
     # Set Terminal title to current directory dynamically
     print -Pn "\e]0; %~\a"
 }
+
+# Load RBenv
+eval "$(rbenv init -)"
+
+# Load NVM
+[ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh
