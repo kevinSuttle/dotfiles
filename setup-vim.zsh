@@ -1,5 +1,5 @@
 if [[ -d ~/.vim ]]
-then 
+then
 	echo "You've already set up vim."
 else
 	mkdir -p ~/.vim/bundle/ && cd $_
