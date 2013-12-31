@@ -1,4 +1,4 @@
-for config_file ($HOME/Code/dotfiles/{aliases,colors,exports,functions}) source $config_file
+for config_file ($DOTFILES/{aliases,colors,functions}) source $config_file
 fpath=( "/usr/local/share/zsh/site-functions/" $fpath )
 
 # add some readline keys back
@@ -29,7 +29,7 @@ setopt CORRECT CORRECT_ALL
 setopt EXTENDED_GLOB
 
 # Originally taken from @holman: https://github.com/holman/dotfiles/blob/master/zsh/config.zsh
-HISTFILE=~/.zsh_history
+HISTFILE=$HOME/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 
@@ -74,9 +74,3 @@ chpwd() {
     # Set Terminal title to current directory dynamically
     print -Pn "\e]0; %~\a"
 }
-
-# Load RBenv
-eval "$(rbenv init -)"
-
-# Load NVM
-[ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh

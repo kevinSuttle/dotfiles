@@ -22,3 +22,5 @@ export PATH="$HOME/bin:$PATH"
 
 # Homebrew cask
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+export DOTFILES="$HOME/Code/DOTFILES"

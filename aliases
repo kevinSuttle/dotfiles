@@ -27,11 +27,11 @@ alias ls="ls -1pAFG"
 # Easier navigation: Thanks @mathiasbynens, @gf3, et al.
 alias c="cd"
 alias ..="cd .."
-alias cdc="cd ~/Code/"
-alias cdd="cd ~/Downloads"
-alias cddf="cd ~/Code/dotfiles"
-alias cdl="cd ~/Code/laptop"
-alias cds="cd ~/Code/kevinsuttle.github.io"
+alias cdc="cd $HOME/Code/"
+alias cdd="cd $HOME/Downloads"
+alias cddf="cd $HOME/Code/dotfiles"
+alias cdl="cd $HOME/Code/laptop"
+alias cds="cd $HOME/Code/kevinsuttle.github.io"
 alias mkcd="mkdir -p && cd $_"
 
 # Application Shortcuts
@@ -39,7 +39,7 @@ alias v="vim"
 alias mvim='/usr/local/Cellar/macvim/7.4-72/bin/mvim'
 
 # Commands
-alias z=". ~/.zshrc" # Reloads the shell
+alias z="source $HOME/.zshrc"   # Reloads Zsh
 alias node='node --harmony'
 alias ni="npm install"
 alias g="grunt"
@@ -62,7 +62,7 @@ alias service_cleanup="/System/Library/Frameworks/CoreServices.framework/Framewo
 alias remove_ds="find . -type f -name '*.DS_Store' -ls -delete"
 
 # Empty the Trash on all mounted volumes and the main HDD
-alias empty_trash="sudo rm -rfv ~/.Trash; sudo rm -rfv /Volumes/*/.Trashes"
+alias empty_trash="sudo rm -rfv $HOME/.Trash; sudo rm -rfv /Volumes/*/.Trashes"
 
 # Also, clear Apple’s System Logs to improve shell startup speed
 alias clear_logs="sudo rm -rfv /private/var/log/asl/*.asl"

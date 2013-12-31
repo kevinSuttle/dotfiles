@@ -2,19 +2,19 @@ set nocompatible
 
 " configure Vundle
 filetype off
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=$HOME/.vim/bundle/vundle/
 call vundle#rc()
 
 " source Vundle bundles
-if filereadable(expand("~/.vimrc.bundles"))
-  source ~/.vimrc.bundles
+if filereadable(expand("$HOME/.vimrc.bundles"))
+  source $HOME/.vimrc.bundles
 endif
 
 Bundle 'gmarik/vundle'
 
 filetype plugin indent on
 
-if filereadable(expand("~/.vim/bundle/vim-tomorrow-theme/colors/Tomorrow-Night-Eighties.vim"))
+if filereadable(expand("$HOME/.vim/bundle/vim-tomorrow-theme/colors/Tomorrow-Night-Eighties.vim"))
   colorscheme Tomorrow-Night-Eighties
 endif
 
