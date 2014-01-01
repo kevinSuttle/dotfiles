@@ -10,6 +10,7 @@ then
 else
 	git clone https://github.com/kevinSuttle/dotfiles.git $HOME/Code/dotfiles
   git clone https://github.com/sindresorhus/pure $HOME/Code/pure-zsh/
+  ln -s "$PWD/pure.zsh" /usr/local/share/zsh/site-functions/prompt_pure_setup
 fi
 
 exec $SHELL -l
