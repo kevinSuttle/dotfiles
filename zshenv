@@ -27,4 +27,3 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export DOTFILES="$HOME/Code/DOTFILES"
 
 for config_file ($DOTFILES/{aliases,colors,functions}) source $config_file
-fpath=( "/usr/local/share/zsh/site-functions/" $fpath )
