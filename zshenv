@@ -23,4 +23,8 @@ export PATH="$HOME/bin:$PATH"
 # Homebrew cask
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
+# Path to my dotfiles repo
 export DOTFILES="$HOME/Code/DOTFILES"
+
+for config_file ($DOTFILES/{aliases,colors,functions}) source $config_file
+fpath=( "/usr/local/share/zsh/site-functions/" $fpath )

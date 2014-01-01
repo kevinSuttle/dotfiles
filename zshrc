@@ -1,6 +1,3 @@
-for config_file ($DOTFILES/{aliases,colors,functions}) source $config_file
-fpath=( "/usr/local/share/zsh/site-functions/" $fpath )
-
 # add some readline keys back
 bindkey "^A" beginning-of-line
 bindkey "^E" end-of-line
@@ -13,9 +10,6 @@ setopt auto_pushd
 
 # automatically enter directories without cd
 setopt auto_cd
-
-# enable color output
-autoload -U colors && colors
 
 # awesome cd movements from zshkit
 setopt AUTOCD
