@@ -18,4 +18,21 @@ else
   echo "Dotfiles install complete."
 fi
 
+# Don't try to clone the vundle repo again if it already exists
+if [[ -d $HOME/.vim ]]
+then
+  echo "You've already set up your vim config."
+else
+  mkdir -p $HOME/.vim/bundle/ && cd $_
+  git init
+  git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
+  ln -sf $DOTFILES/vimrc $HOME/.vimrc
+  ln -sf $DOTFILES/vimrc.bundles $HOME/.vimrc.bundles
+  ln -sf $DOTFILES/gvimrc $HOME/.gvimrc
+
+  vim +BundleInstall +qall
+  cd -
+  echo "Vim config complete."
+fi
+
 exec $SHELL -l
