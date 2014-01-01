@@ -31,7 +31,6 @@ else
   ln -sf $DOTFILES/gvimrc $HOME/.gvimrc
 
   vim +BundleInstall +qall
-  cd -
   echo "Vim config complete."
 fi
 
