@@ -9,26 +9,21 @@
 [core]
     autocrlf = input
     editor = vim
-    excludesfile = $HOME/.gitignore
+    excludesfile = ~/.gitignore
     whitespace = space-before-tab,indent-with-non-tab,trailing-space,cr-at-eol
-[credential]
-    helper = osxkeychain
 [diff]
     keepBackup = false
     tool = opendiff
-[github]
-    user = kevinSuttle
 [help]
     autocorrect = 1
 [hub]
     protocol = https
+[include]
+  path = ~/.gitconfig.local
 [merge]
     keepBackup = false
     tool = opendiff
 [push]
     default = simple
-[user]
-	email = kevin@suttle.io
-	name = Kevin Suttle
 [mergetool]
 	keepBackup = false
