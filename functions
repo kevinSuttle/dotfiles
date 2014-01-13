@@ -11,7 +11,13 @@ function parse_git_branch() {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
 }
 
-searchAndDestroy() {
+function searchAndDestroy() {
   lsof -i TCP:$1 | grep LISTEN | awk '{print $2}' | xargs kill -9
   echo "Port" $1 "found and killed."
+}
+
+function copySSHKey() {
+    cd ~/.ssh
+    ls
+    pbcopy < ~/.ssh/id_rsa.pub
 }
