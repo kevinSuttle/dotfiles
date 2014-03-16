@@ -3,9 +3,6 @@ export EDITOR=vim
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# keep TONS of history
-export HISTSIZE=4096
-
 # Highlight section titles in manual pages
 export LESS_TERMCAP_md="$ORANGE"
 
