@@ -42,7 +42,7 @@ alias mvim='/usr/local/Cellar/macvim/7.4-72/bin/mvim'
 alias r="source $HOME/.zshrc"   # Reloads Zsh
 alias ni="npm install"
 alias g="grunt"
-alias sha="openssl sha1"
+alias getsha="openssl dgst -sha256 <"
 
 # Get OS X Software Updates, update installed Ruby gems, Node/NPM and Homebrew formulae
 alias update_brew="brew update && brew upgrade; brew cleanup; brew prune;"
