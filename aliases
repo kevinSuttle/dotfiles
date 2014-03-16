@@ -39,7 +39,7 @@ alias v="vim"
 alias mvim='/usr/local/Cellar/macvim/7.4-72/bin/mvim'
 
 # Commands
-alias z="source $HOME/.zshrc"   # Reloads Zsh
+alias r="source $HOME/.zshrc"   # Reloads Zsh
 alias ni="npm install"
 alias g="grunt"
 alias sha="openssl sha1"
