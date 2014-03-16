@@ -1,6 +1,6 @@
 # Change working directory to the top-most Finder window location
 function cdf() { # short for `cdfinder`
-    cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')"
+	cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')"
 }
 
 function parse_git_dirty() {
@@ -17,7 +17,7 @@ function searchAndDestroy() {
 }
 
 function copySSHKey() {
-    cd ~/.ssh
-    ls
-    pbcopy < ~/.ssh/id_rsa.pub
+	cd ~/.ssh
+	ls
+	pbcopy < ~/.ssh/id_rsa.pub
 }

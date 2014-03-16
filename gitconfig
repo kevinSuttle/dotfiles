@@ -1,29 +1,29 @@
 [color]
-    branch = true
-    diff = true
-    grep = true
-    interactive = true
-    log = true
-    status = true
-    ui = true
+	branch = true
+	diff = true
+	grep = true
+	interactive = true
+	log = true
+	status = true
+	ui = true
 [core]
-    autocrlf = input
-    editor = vim
-    excludesfile = ~/.gitignore
-    whitespace = space-before-tab,indent-with-non-tab,trailing-space,cr-at-eol
+	autocrlf = input
+	editor = vim
+	excludesfile = ~/.gitignore
+	whitespace = space-before-tab,indent-with-non-tab,trailing-space,cr-at-eol
 [diff]
-    keepBackup = false
-    tool = opendiff
+	keepBackup = false
+	tool = opendiff
 [help]
-    autocorrect = 1
+	autocorrect = 1
 [hub]
-    protocol = https
+	protocol = https
 [include]
   path = ~/.gitconfig.local
 [merge]
-    keepBackup = false
-    tool = opendiff
+	keepBackup = false
+	tool = opendiff
 [push]
-    default = simple
+	default = simple
 [mergetool]
 	keepBackup = false

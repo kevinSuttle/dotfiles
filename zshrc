@@ -60,11 +60,11 @@ promptinit
 
 # Prompt Functions
 precmd() {
-    chpwd
-    prompt pure
+	chpwd
+	prompt pure
 }
 
 chpwd() {
-    # Set Terminal title to current directory dynamically
-    print -Pn "\e]0; %~\a"
+	# Set Terminal title to current directory dynamically
+	print -Pn "\e]0; %~\a"
 }
