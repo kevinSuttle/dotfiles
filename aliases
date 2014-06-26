@@ -23,9 +23,10 @@ alias gu="git reset --soft 'HEAD^'" # Think "un-stage"
 
 # List files, including hidden ones
 alias ls="ls -1pAFG"
+alias shf="defaults write com.apple.finder AppleShowAllFiles -bool true"
+alias hhf="defaults write com.apple.finder AppleShowAllFiles -bool false"
 
 # Easier navigation: Thanks @mathiasbynens, @gf3, et al.
-alias c="cd"
 alias ..="cd .."
 alias cdc="cd $HOME/Code/"
 alias cdd="cd $HOME/Downloads"
@@ -37,16 +38,19 @@ alias mkcd="mkdir -p && cd $_"
 # Application Shortcuts
 alias v="vim"
 alias mvim='/usr/local/Cellar/macvim/7.4-72/bin/mvim'
+alias st='open -a "Sublime Text"'
+alias make_server="python -m SimpleHTTPServer"
 
 # Commands
-alias r="source $HOME/.zshrc"   # Reloads Zsh
+alias r="exec $SHELL -l"   # Reloads dotfiles
 alias ni="npm install"
-alias g="grunt"
-alias getsha="openssl dgst -sha256 <"
+alias nig="npm install -g"
+alias g="gulp"
+alias get_sha="openssl dgst -sha256 <"
 
 # Get OS X Software Updates, update installed Ruby gems, Node/NPM and Homebrew formulae
 alias update_brew="brew update && brew upgrade; brew cleanup; brew prune;"
-alias update_node="npm update npm -g; npm update -g;"
+alias update_node="npm update npm -g; brew upgrade node"
 alias update_osx="sudo softwareupdate -i -a;"
 alias update_ruby="brew upgrade rbenv ruby-build; gem update --system --verbose --no-document; gem update --no-document;"
 alias update_system="update_osx update_ruby update_brew update_node"
