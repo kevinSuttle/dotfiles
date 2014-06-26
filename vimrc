@@ -19,7 +19,6 @@ if filereadable(expand("$HOME/.vim/bundle/vim-tomorrow-theme/colors/Tomorrow-Nig
 endif
 
 inoremap jk <ESC>
-map <C-n> :NERDTreeToggle<CR>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
@@ -76,3 +75,4 @@ function! StripWhitespace ()
 exec ':%s/ \+$//gc'
 endfunction
 map ,s :call StripWhitespace ()<CR>
+
