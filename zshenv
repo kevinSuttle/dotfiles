@@ -10,19 +10,20 @@ export LESS_TERMCAP_md="$ORANGE"
 export MANPAGER="less -X"
 
 # Homebrew
-export PATH="/usr/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
-
-# Sublime Text
-export PATH="$HOME/bin:$PATH"
+export PATH="/usr/bin:$PATH"
 
 # Homebrew cask
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
+# Go runtime
+export GOPATH=$HOME/Code/gocode
+
 # Path to my dotfiles repo
-export DOTFILES="$HOME/Code/DOTFILES"
+export DOTFILES="$HOME/Code/dotfiles"
 
 for config_file ($DOTFILES/{aliases,colors,functions}) source $config_file
 
-fpath=(/usr/local/share/zsh-completions /usr/local/share/zsh/functions $fpath)
+# fpath=(/usr/local/share/zsh-completions /usr/local/share/zsh/functions $fpath)
+source ~/Code/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
