@@ -12,8 +12,9 @@ function parse_git_branch() {
 }
 
 function searchAndDestroy() {
-  lsof -i TCP:$1 | grep LISTEN | awk '{print $2}' | xargs kill -9
-  echo "Port" $1 "found and killed."
+  lsof -i TCP:$1 | awk '/LISTEN/{print $2}' | xargs kill -9
+  if $1 !== dev 2>null
+  	echo "Port" $1 "found and killed."
 }
 
 function copySSHKey() {
