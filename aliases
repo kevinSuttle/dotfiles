@@ -36,7 +36,6 @@ alias cds="cd $HOME/Code/kevinsuttle.github.io"
 
 # Application Shortcuts
 alias v="vim"
-alias mvim='/usr/local/Cellar/macvim/7.4-72/bin/mvim'
 alias st='open -a "Sublime Text"'
 alias make_server="python -m SimpleHTTPServer"
 
