@@ -22,3 +22,7 @@ function copySSHKey() {
 	ls
 	pbcopy < ~/.ssh/id_rsa.pub
 }
+
+function mkcd() {
+	mkdir -p $1 && cd $_
+}

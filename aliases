@@ -33,7 +33,6 @@ alias cdd="cd $HOME/Downloads"
 alias cddf="cd $HOME/Code/dotfiles"
 alias cdl="cd $HOME/Code/laptop"
 alias cds="cd $HOME/Code/kevinsuttle.github.io"
-alias mkcd="mkdir -p && cd $_"
 
 # Application Shortcuts
 alias v="vim"
