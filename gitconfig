@@ -13,7 +13,6 @@
 	whitespace = space-before-tab,indent-with-non-tab,trailing-space,cr-at-eol
 [diff]
 	keepBackup = false
-	tool = opendiff
 [help]
 	autocorrect = 1
 [hub]
@@ -22,11 +21,9 @@
   path = ~/.gitconfig.local
 [merge]
 	keepBackup = false
-	tool = opendiff
 [push]
 	default = simple
-[mergetool]
-	keepBackup = false
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
+
