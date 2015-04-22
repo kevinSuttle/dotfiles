@@ -26,3 +26,7 @@ function copySSHKey() {
 function mkcd() {
 	mkdir -p $1 && cd $_
 }
+
+function own() {
+	sudo chmod -R 777 $1
+}
