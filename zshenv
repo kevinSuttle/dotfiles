@@ -18,7 +18,12 @@ export PATH="/usr/bin:$PATH"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Go runtime
-export GOPATH=$HOME/Code/gocode
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export GOPATH=$HOME/go
+export GOROOT='/opt/go'
+export GOOS=darwin
+export GOARCH=amd64
+export PATH=$PATH:$GOPATH/bin
 
 # Path to my dotfiles repo
 export DOTFILES="$HOME/Code/dotfiles"
