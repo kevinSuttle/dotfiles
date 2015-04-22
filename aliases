@@ -4,7 +4,7 @@ if [[ -f `command -v hub` ]] ; then alias git=hub ; fi
 # Git aliases, because who wants to type 'git' every time?
 alias ga="git add"
 alias gb="git branch --verbose"
-alias gc="git commit --verbose"
+alias gc="git commit -s --verbose"
 alias gcl="git clone --single-branch --verbose"
 alias gco="git checkout"
 alias gcom="git checkout master"
