@@ -76,3 +76,7 @@ exec ':%s/ \+$//gc'
 endfunction
 map ,s :call StripWhitespace ()<CR>
 
+" ---------------------------------------------------------------------------
+"  add spell checking and automatic wrapping at 72 columns to commit messages
+" ---------------------------------------------------------------------------
+autocmd Filetype gitcommit setlocal spell textwidth=72
