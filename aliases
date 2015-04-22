@@ -64,7 +64,7 @@ alias remove_ds="find . -type f -name '*.DS_Store' -ls -delete"
 # Empty the Trash on all mounted volumes and the main HDD
 alias empty_trash="sudo rm -rfv $HOME/.Trash; sudo rm -rfv /Volumes/*/.Trashes"
 
-# Also, clear Apple’s System Logs to improve shell startup speed
+# Clear Apple’s System Logs to improve shell startup speed
 alias clear_logs="sudo rm -rfv /private/var/log/asl/*.asl"
 
 # MASSIVE CLEANUP
