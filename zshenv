@@ -30,5 +30,5 @@ export DOTFILES=$HOME/Code/dotfiles
 
 for config_file ($DOTFILES/{aliases,colors,functions}) source $config_file
 
-# fpath=(/usr/local/share/zsh-completions /usr/local/share/zsh/functions $fpath)
+fpath=(/usr/local/share/zsh-completions "$HOME/.zfunctions" $fpath )
 source ~/Code/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
