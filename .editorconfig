@@ -5,7 +5,7 @@ root = true
 # Unix-style newlines at the bottom of every file
 [*]
 end_of_line = lf
-charset = "utf-8"
+charset = utf-8
 
 # Tab indentation
 indent_style = tabs
@@ -22,9 +22,9 @@ spaces_around_brackets = false
 
 # JavaScript-specific settings
 [.js]
-quote_type = 'single'
+quote_type = single
 curly_bracket_next_line = false
 
 # HTML-specific settings
 [.html]
-quote_type = 'double'
+quote_type = double
