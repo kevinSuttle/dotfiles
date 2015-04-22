@@ -1,6 +1,3 @@
-# Wrap git with hub
-if [[ -f `command -v hub` ]] ; then alias git=hub ; fi
-
 # Git aliases, because who wants to type 'git' every time?
 alias ga="git add"
 alias gb="git branch --verbose"
