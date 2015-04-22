@@ -32,3 +32,4 @@ for config_file ($DOTFILES/{aliases,colors,functions}) source $config_file
 
 fpath=(/usr/local/share/zsh-completions "$HOME/.zfunctions" $fpath )
 source ~/Code/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /Users/kevinsuttle/.iterm2_shell_integration.zsh

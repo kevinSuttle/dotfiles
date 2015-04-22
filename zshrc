@@ -67,5 +67,3 @@ chpwd() {
 	# Set Terminal title to current directory dynamically
 	print -Pn "\e]0; %~\a"
 }
-
-source /Users/kevinsuttle/.iterm2_shell_integration.zsh
