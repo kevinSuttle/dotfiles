@@ -26,7 +26,7 @@ export GOARCH=amd64
 export PATH=$PATH:$GOPATH/bin
 
 # Path to my dotfiles repo
-export DOTFILES="$HOME/Code/dotfiles"
+export DOTFILES=$HOME/Code/dotfiles
 
 for config_file ($DOTFILES/{aliases,colors,functions}) source $config_file
 
