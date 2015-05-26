@@ -16,6 +16,7 @@ export PATH="/usr/bin:$PATH"
 
 # Homebrew cask
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+export GIT_TERMINAL_PROMPT=1
 
 # Go runtime
 export PATH=$PATH:/usr/local/opt/go/libexec/bin

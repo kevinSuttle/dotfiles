@@ -15,8 +15,6 @@
 	keepBackup = false
 [help]
 	autocorrect = 1
-[hub]
-	protocol = https
 [include]
   path = ~/.gitconfig.local
 [merge]
