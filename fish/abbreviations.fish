@@ -40,9 +40,7 @@ abbr -a start_server "python -m SimpleHTTPServer"
 abbr -a get_sha "openssl dgst -sha256 <"
 abbr -a serve python -m SimpleHTTPServer
 abbr -a copyssh "pbcopy < ~/.ssh/id_rsa.pub"
-
-# Get OS X Software Updates, update installed Ruby gems, Node/NPM and Homebrew formulae
-abbr -a update_brew brew update and brew upgrade and brew cleanup and brew prune and brew doctor
+abbr -a update_brew brew update; brew upgrade; brew cleanup; brew prune; brew doctor;
 
 abbr -a efc atom ~/.config/fish/config.fish
 abbr -a eff atom ~/.config/fish/functions
