@@ -21,3 +21,7 @@ bower_components
 
 # JetBrains products
 .idea
+
+# Fish
+fish/fish_history
+fish/fishd.*
