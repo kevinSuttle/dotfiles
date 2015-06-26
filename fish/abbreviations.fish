@@ -30,10 +30,8 @@ abbr -a cdd cd ~/Downloads
 abbr -a cddf cd ~/Code/dotfiles
 abbr -a cdl cd ~/Code/laptop
 abbr -a cds cd ~/Code/kevinsuttle.github.io
-abbr -a cdb cd ~/Code/bluemix-beta
 
 # Application Shortcuts
-abbr -a st open -a "Sublime Text"
 abbr -a start_server "python -m SimpleHTTPServer"
 
 # Commands
