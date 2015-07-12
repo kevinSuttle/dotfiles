@@ -38,7 +38,6 @@ abbr -a start_server "python -m SimpleHTTPServer"
 abbr -a get_sha "openssl dgst -sha256 <"
 abbr -a serve python -m SimpleHTTPServer
 abbr -a copyssh "pbcopy < ~/.ssh/id_rsa.pub"
-abbr -a update_brew brew update; brew upgrade; brew cleanup; brew prune; brew doctor;
 
 abbr -a efc atom ~/.config/fish/config.fish
 abbr -a eff atom ~/.config/fish/functions
