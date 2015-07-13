@@ -5,7 +5,7 @@ end
 source "$HOME/.config/fish/abbreviations.fish"
 
 # Fishhh
-set -x FISH_GREETING ""
+set -x fish_greeting ""
 
 # Editor prefs
 set -x EDITOR vim
