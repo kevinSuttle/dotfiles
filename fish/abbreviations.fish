@@ -44,4 +44,4 @@ abbr -a eff atom ~/.config/fish/functions
 abbr -a efp atom ~/.config/fish/functions/fish_prompt
 abbr -a efa atom ~/.config/fish/abbreviations.fish
 abbr -a r source ~/.config/fish/config.fish
-abbr -a f "exec '/Applications/fish.app/Contents/Resources/base/bin/fish'"
+abbr -a f exec fish
