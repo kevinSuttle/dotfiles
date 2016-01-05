@@ -8,15 +8,12 @@
 	ui = true
 [core]
 	autocrlf = input
-	editor = vim
 	excludesfile = ~/.gitignore
 	whitespace = space-before-tab,indent-with-non-tab,trailing-space,cr-at-eol
 [diff]
 	keepBackup = false
 [help]
 	autocorrect = 1
-[include]
-  path = ~/.gitconfig.local
 [merge]
 	keepBackup = false
 [push]
@@ -24,4 +21,5 @@
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
-
+[include]
+  path = ~/.private

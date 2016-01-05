@@ -1,0 +1,23 @@
+export EDITOR=vim
+export XDG_CONFIG_HOME=~/.config
+
+export MY_NAME=""
+export PRIVATE_NPM_REGISTRY=
+export GITHUB_ORG=iot
+export WORK_EMAIL_ADDRESS=""
+export OPEN_SOURCE_EMAIL_ADDRESS=""
+
+export GITHUB_TOKEN=""
+export SLACK_TOKEN_FOR_TRAVIS=""
+export NPM_TOKEN=""
+
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:
+
+# System
+GIT_TERMINAL_PROMPT=1
+LANG=en_US.UTF-8
+USER=kevinSuttle
+TERM_PROGRAM=iTerm2.app
+
+# Actual data for the sensitive values above
+if [ -r ~/.private ]; then . ~/.private; fi

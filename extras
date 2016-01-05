@@ -1,0 +1,7 @@
+[ -f ~.travis/travis.sh ] && source ~.travis/travis.sh
+
+if which ruby >/dev/null && which gem >/dev/null; then
+    PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+fi
+
+eval "$(rbenv init -)"

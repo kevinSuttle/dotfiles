@@ -2,7 +2,7 @@ if not status --is-interactive
   exit 0
 end
 
-source "$HOME/.config/fish/abbreviations.fish"
+source "$XDG_CONFIG_HOME/fish/abbreviations.fish"
 
 # Fishhh
 set -x fish_greeting ""
