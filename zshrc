@@ -1,4 +1,6 @@
-source ~/.config/env
+source $XDG_CONFIG_HOME/local
+source $XDG_CONFIG_HOME/env
+
 source $XDG_CONFIG_HOME/aliases
 source $XDG_CONFIG_HOME/colors
 source $XDG_CONFIG_HOME/extras

@@ -1,3 +1,4 @@
+# https://www.npmjs.com/package/pure-prompt
 autoload -U promptinit && promptinit
 
 PURE_PROMPT_SYMBOL=${PROMPT_CHARACTER}

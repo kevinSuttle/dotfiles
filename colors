@@ -8,3 +8,17 @@ if [[ $COLORTERM = gnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/n
 elif infocmp xterm-256color >/dev/null 2>&1; then
 	export TERM='xterm-256color';
 fi;
+
+# Colorized man pages
+# https://gist.github.com/cocoalabs/2fb7dc2199b0d4bf160364b8e557eb66#gistcomment-1850830
+man() {
+    LESS_TERMCAP_mb=$'\e'"[1;31m" \
+    LESS_TERMCAP_md=$'\e'"[1;31m" \
+    LESS_TERMCAP_me=$'\e'"[0m" \
+    LESS_TERMCAP_se=$'\e'"[0m" \
+    LESS_TERMCAP_so=$'\e'"[1;44;33m" \
+    LESS_TERMCAP_ue=$'\e'"[0m" \
+    LESS_TERMCAP_us=$'\e'"[1;32m" \
+    command man "$@"
+}
+
