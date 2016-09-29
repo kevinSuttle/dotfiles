@@ -20,4 +20,4 @@ USER=""
 TERM_PROGRAM=""
 
 # Actual data for the sensitive values above
-if [ -r ~/.private ]; then . ~/.private; fi
+if [ -r ~/.local ]; then . ~/.local; fi
