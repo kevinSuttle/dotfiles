@@ -11,7 +11,7 @@ export GITHUB_TOKEN=""
 export SLACK_TOKEN_FOR_TRAVIS=""
 export NPM_TOKEN=""
 
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:
+export PATH=""
 
 # System
 GIT_TERMINAL_PROMPT=1
