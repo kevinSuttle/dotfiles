@@ -2,14 +2,17 @@ export EDITOR=vim
 export XDG_CONFIG_HOME=~/.config
 
 export MY_NAME=""
-export PRIVATE_NPM_REGISTRY=
-export GITHUB_ORG=""
+
 export WORK_EMAIL_ADDRESS=""
 export OPEN_SOURCE_EMAIL_ADDRESS=""
 
+export GITHUB_ORG=""
 export GITHUB_TOKEN=""
+
 export SLACK_TOKEN_FOR_TRAVIS=""
-export NPM_TOKEN=""
+
+export NPME_TOKEN=""
+export NPME_REGISTRY=
 
 export PATH=""
 
