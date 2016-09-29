@@ -8,13 +8,14 @@ export USER_EDITOR=
 export USER_NAME=""
 export PUBLIC_GIT_COMMITTER_EMAIL=""
 
-export WORK_NPMO_REGISTRY=""
 export WORK_GHE_ORG=""
+export WORK_GHE_TOKEN=""
 export WORK_GIT_COMMITTER_EMAIL=""
 
-export WORK_GHE_TOKEN=""
 export WORK_SLACK_TOKEN_FOR_TRAVIS=""
-export WORK_NPMO_TOKEN=""
+
+export WORK_NPME_REGISTRY=""
+export WORK_NPME_TOKEN=""
 
 USER_TERM_PROGRAM="iTerm.app"
 
