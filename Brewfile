@@ -4,7 +4,6 @@ brew "git"
 brew "readline"
 brew "rbenv"
 brew "ruby-build"
-brew "nvm"
 brew "yarn", args: ["without-node"]
 brew "vim"
 brew "cask"
@@ -25,6 +24,7 @@ cask "private-internet-access"
 cask "moom"
 cask "torbrowser"
 
+# Can't add until signed into MAS
 mas "GIPHY Capture", id: 668208984
 mas "bear", id: 1091189122
 mas "keynote", id: 409183694
