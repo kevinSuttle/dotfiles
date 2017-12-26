@@ -2,4 +2,4 @@
 
 test -e ${HOME}/.iterm2_shell_integration.bash && source ${HOME}/.iterm2_shell_integration.bash
 
-~/.rbenv/completions/rbenv.bash
+test -e ${HOME}/.rbenv/completions/rbenv.bash && source ${HOME}/.rbenv/completions/rbenv.bash
