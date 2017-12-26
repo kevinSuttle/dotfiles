@@ -41,6 +41,7 @@ fish/fishd.*
 .nvm
 .viminfo
 
+# User directories in MacOS
 Applications
 Code
 Desktop
@@ -51,3 +52,6 @@ Movies
 Music
 Pictures
 Public
+
+# Private keys
+.local
