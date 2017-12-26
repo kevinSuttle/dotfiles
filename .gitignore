@@ -55,3 +55,4 @@ Public
 
 # Private keys
 .local
+.git.user.config
