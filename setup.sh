@@ -31,9 +31,10 @@ git remote add origin https://github.com/kevinSuttle/dotfiles.git;
 git fetch origin;
 mkdir -p ~/Code && cd $_;
 
-git clone https://github.com/kevinSuttle/macOS-Defaults.git macOS-defaults -b suttle && cd $_;
-source .osx;
+# git clone https://github.com/kevinSuttle/macOS-Defaults.git macOS-defaults -b suttle && cd $_;
+# source .osx;
 
 rbenv install 2.4.3;
 mkdir -p ~/.nvm;
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash;
 nvm install --lts;

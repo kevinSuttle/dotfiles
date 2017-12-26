@@ -1,2 +1,53 @@
-npm-debug.log
+.svn
+*~
+*.swp
+.subversion
+.ssh
+
+# Folder view configuration files
 .DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+.Trash
+
+# NPM
+npm-debug.log
+node_modules
+bower_components
+
+# IDEs
+.idea
+.nvm
+
+# Fish
+fish/fish_history
+fish/fishd.*
+
+# Bash
+.bash_history
+
+# Misc
+.CFUserTextEncoding
+.bash_sessions
+
+.rbenv
+.nvm
+.viminfo
+
+Applications
+Code
+Desktop
+Documents
+Downloads
+Library
+Movies
+Music
+Pictures
+Public
