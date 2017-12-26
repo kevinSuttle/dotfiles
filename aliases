@@ -34,7 +34,7 @@ alias ..="cd .."
 alias mkcd="mkdir -p && cd $_"
 alias ls="ls -AFqLG"
 
-alias sz='source ~/.zshrc'
+alias reload='exec $SHELL -l'
 
 # Hiding and showing files in Finder
 alias shf="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
@@ -42,8 +42,3 @@ alias hhf="defaults write com.apple.finder AppleShowAllFiles -bool false && kill
 
 ## npm: list globally-installed packages
 alias nlg="npm list -g --depth=0"
-
-## elm
-alias em="elm-make"
-alias er="elm-reactor"
-alias ep="elm-package"

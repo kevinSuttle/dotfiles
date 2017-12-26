@@ -1,26 +1,14 @@
 export EDITOR=vim
-export XDG_CONFIG_HOME=~/.config
 
-export MY_NAME=""
+export NVM_DIR="$HOME/.nvm"
+  . "/usr/local/opt/nvm/nvm.sh"
 
-export WORK_EMAIL_ADDRESS=""
-export OPEN_SOURCE_EMAIL_ADDRESS=""
+export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
-export GITHUB_ORG=""
-export GITHUB_TOKEN=""
+if which ruby >/dev/null && which gem >/dev/null; then
+    PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+fi
 
-export SLACK_TOKEN_FOR_TRAVIS=""
-
-export NPME_TOKEN=""
-export NPME_REGISTRY=
-
-export PATH=""
-
-# System
-GIT_TERMINAL_PROMPT=1
-LANG=en_US.UTF-8
-USER=""
-TERM_PROGRAM=""
-
-# Actual data for the sensitive values above
-if [ -r ~/.local ]; then . ~/.local; fi
+export AWS_ACCESS_KEY="AKIAI7JFD3Q56EMCQAVA"
+export AWS_ACCESS_KEY_ID="$AWS_ACCESS_KEY"
+export AWS_SECRET_ACCESS_KEY="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"

@@ -13,6 +13,7 @@ Thumbs.db
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
+.Trash
 
 # NPM
 npm-debug.log
@@ -25,3 +26,10 @@ bower_components
 # Fish
 fish/fish_history
 fish/fishd.*
+
+# Bash
+.bash_history
+
+# Misc
+.CFUserTextEncoding
+
