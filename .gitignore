@@ -2,7 +2,7 @@
 *~
 *.swp
 .subversion
-.ssh
+
 
 # Folder view configuration files
 .DS_Store
@@ -17,14 +17,18 @@ Thumbs.db
 .Trashes
 .Trash
 
-# NPM
-npm-debug.log
+# Npm
+*.log
 node_modules
 bower_components
+.nvm
+.npm
+.pm2
+.node-gyp
+.babel.json
 
 # IDEs
 .idea
-.nvm
 
 # Fish
 fish/fish_history
@@ -32,16 +36,16 @@ fish/fishd.*
 
 # Bash
 .bash_history
+.bash_sessions
 
 # Misc
 .CFUserTextEncoding
-.bash_sessions
-
 .rbenv
-.nvm
+.docker
 .viminfo
 
 # User directories in MacOS
+<<<<<<< Updated upstream
 Applications
 Code
 Desktop
@@ -73,3 +77,5 @@ SpiderOak Hive
 # Private keys
 .local
 .git.user.config
+.ssh
+
