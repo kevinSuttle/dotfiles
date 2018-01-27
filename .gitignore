@@ -52,6 +52,23 @@ Movies
 Music
 Pictures
 Public
+SpiderOak Hive
+.aws/
+.babel.json
+.config/
+.docker/
+.electron/
+.histfile
+.luna/
+.node-gyp/
+.now/
+.npm/
+.pia_manager/
+.*.log
+.pm2/
+.vscode/
+.yarnrc
+.zcompdump
 
 # Private keys
 .local
