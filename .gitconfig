@@ -16,6 +16,8 @@
 	autocorrect = 1
 [merge]
 	keepBackup = false
+	tool = code
+	conflictstyle = diff3
 [push]
 	default = simple
 [filter "media"]
@@ -23,3 +25,4 @@
 	smudge = git-media-smudge %f
 [include]
 	path = ~/.git.user.config
+	path = ~/.gitconfig.local

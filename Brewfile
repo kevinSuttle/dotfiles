@@ -25,9 +25,9 @@ cask "moom"
 cask "torbrowser"
 
 # Can't add until signed into MAS
-mas "GIPHY Capture", id: 668208984
-mas "bear", id: 1091189122
-mas "keynote", id: 409183694
-mas "pages", id: 409201541
-mas "ia-writer", id: 775737590
-mas "kindle", id: 405399194
+# mas "GIPHY Capture", id: 668208984
+# mas "bear", id: 1091189122
+# mas "keynote", id: 409183694
+# mas "pages", id: 409201541
+# mas "ia-writer", id: 775737590
+# mas "kindle", id: 405399194

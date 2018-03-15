@@ -3,7 +3,6 @@
 *.swp
 .subversion
 
-
 # Folder view configuration files
 .DS_Store
 Desktop.ini
@@ -40,14 +39,18 @@ fish/fishd.*
 
 # Misc
 .CFUserTextEncoding
-.rbenv
 .docker
+.localized
+*.padl
+.rbenv
+*.ssb
 .viminfo
+.yarnrc
+.zcompdump
 
 # User directories in MacOS
-<<<<<<< Updated upstream
 Applications
-Code
+
 Desktop
 Documents
 Downloads
@@ -55,27 +58,31 @@ Library
 Movies
 Music
 Pictures
-Public
+Sites
 SpiderOak Hive
+code/
 .aws/
-.babel.json
+.bundle/
+.cargo/
 .config/
 .docker/
 .electron/
+.gem/
 .histfile
 .luna/
+.multirust/
 .node-gyp/
 .now/
 .npm/
+.opam/
 .pia_manager/
-.*.log
 .pm2/
+.rustup/
 .vscode/
-.yarnrc
-.zcompdump
+.vscode-insiders/
 
-# Private keys
+# Sensitive data
 .local
-.git.user.config
 .ssh
-
+.gitconfig.local
+.*.log

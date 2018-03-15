@@ -25,11 +25,19 @@ abbr -a hhf defaults write com.apple.finder AppleShowAllFiles -bool false
 
 # Easier navigation: Thanks @mathiasbynens, @gf3, et al.
 abbr -a .. cd ..
+<<<<<<< HEAD
 abbr -a cdc cd ~/Code/
 abbr -a cdd cd ~/Downloads
 abbr -a cddf cd ~/Code/dotfiles
 abbr -a cdl cd ~/Code/laptop
 abbr -a cds cd ~/Code/kevinsuttle.github.io
+=======
+abbr -a cdc cd ~/code/
+abbr -a cdd cd ~/Downloads
+abbr -a cddf cd ~/code/dotfiles
+abbr -a cdl cd ~/code/laptop
+abbr -a cds cd ~/code/kevinsuttle.github.io
+>>>>>>> Update configs based on usage
 
 # Application Shortcuts
 abbr -a start_server "python -m SimpleHTTPServer"

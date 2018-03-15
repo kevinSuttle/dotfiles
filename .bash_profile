@@ -7,8 +7,6 @@ source ~/bash/colors.sh
 source ~/bash/extras.sh
 source ~/bash/prompt.sh
 
-source ~/.local
-
 shopt -s cdspell
 shopt -s checkwinsize
 shopt -s histappend
