@@ -35,6 +35,7 @@ mkdir -p ~/code && cd $_;
 # source .osx;
 
 rbenv install 2.4.3;
+rbenv global 2.4.3;
 mkdir -p ~/.nvm;
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash;
 
