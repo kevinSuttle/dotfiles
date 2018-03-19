@@ -28,6 +28,7 @@ bower_components
 
 # IDEs
 .idea
+.atom
 
 # Fish
 fish/fish_history
