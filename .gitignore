@@ -45,7 +45,6 @@ fish/fishd.*
 *.padl
 .rbenv
 *.ssb
-.viminfo
 .yarnrc
 .zcompdump
 
@@ -66,6 +65,7 @@ code/
 .bundle/
 .cargo/
 .config/
+.cargo/
 .docker/
 .electron/
 .gem/
@@ -87,3 +87,4 @@ code/
 .ssh
 .gitconfig.local
 .*.log
+.viminfo
