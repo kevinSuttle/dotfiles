@@ -44,7 +44,6 @@ fish/fishd.*
 .docker
 .localized
 *.padl
-.rbenv
 *.ssb
 
 # User directories in MacOS
@@ -77,6 +76,7 @@ code/
 .opam/
 .pia_manager/
 .pm2/
+.rbenv/
 .rustup/
 .vscode/
 .vscode-insiders/
