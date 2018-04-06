@@ -25,6 +25,7 @@ bower_components
 .pm2
 .node-gyp
 .babel.json
+.yarnrc
 
 # IDEs
 .idea
@@ -45,8 +46,6 @@ fish/fishd.*
 *.padl
 .rbenv
 *.ssb
-.yarnrc
-.zcompdump
 
 # User directories in MacOS
 Applications
@@ -88,3 +87,4 @@ code/
 .gitconfig.local
 .*.log
 .viminfo
+.zcompdump
