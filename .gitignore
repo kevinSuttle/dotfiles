@@ -1,7 +1,6 @@
 .svn
 *~
 *.swp
-.subversion
 
 # Folder view configuration files
 .DS_Store
@@ -20,8 +19,6 @@ Thumbs.db
 *.log
 node_modules
 bower_components
-.nvm
-.npm
 .pm2
 .node-gyp
 .babel.json
@@ -35,20 +32,14 @@ bower_components
 fish/fish_history
 fish/fishd.*
 
-# Bash
-.bash_history
-.bash_sessions
-
 # Misc
 .CFUserTextEncoding
 .docker
 .localized
 *.padl
-*.ssb
 
 # User directories in MacOS
 Applications
-
 Desktop
 Documents
 Downloads
@@ -58,33 +49,43 @@ Music
 Pictures
 Sites
 SpiderOak Hive
+
 code/
+.abstract/
 .aws/
+.bash_sessions/
+.blockstack/
 .bundle/
 .cargo/
 .config/
 .cargo/
+.dat-desktop/
 .docker/
 .electron/
 .gem/
-.histfile
 .luna/
 .multirust/
 .node-gyp/
 .now/
 .npm/
+.nvm/
 .opam/
 .pia_manager/
 .pm2/
 .rbenv/
 .rustup/
+.subversion/
 .vscode/
 .vscode-insiders/
 
 # Sensitive data
-.local
-.ssh
+.bash_history
 .gitconfig.local
+.histfile
 .*.log
+.local
 .viminfo
 .zcompdump
+.ssh/
+.ssb/
+.Trash/
